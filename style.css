@@ -8,6 +8,109 @@
     display: none ;
 }
 
+.slick-track{
+    display: flex;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.shirt-div .slick-dots{
+    display: flex;
+}
+
+
+
+.shirt-div .slick-dots li{
+    list-style: none;
+}
+
+.shirt-div .slick-dots button{
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 99999999px;
+    font-size: 0px;
+    margin: 0 8 0 8;
+}
+
+.shirt-div .slick-dots{
+    display: flex;
+}
+
+
+.second-shirt .slick-dots{
+    display: flex;
+}
+
+.second-shirt .slick-dots li{
+    list-style: none;
+}
+
+.second-shirt .slick-dots button{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 99999999px;
+    font-size: 0px;
+    margin: 0 8 0 8;
+}
+
+.second-shirt .slick-arrow{
+    font-size: 0;
+    width: 100px;
+    height: 46px;
+    border: none;
+}
+
+.products-content .slick-arrow{
+    font-size: 0;
+    width: 100px;
+    height: 46px;
+    border: none;
+}
+
+.products-content .slick-arrow.slick-prev{
+    background: url('images/left.png') 0 50% / 100% no-repeat;
+    margin-left: 10px;
+}
+
+.products-content .slick-arrow.slick-next{
+    background: url('images/right.png') 0 50% / 100% no-repeat;
+    margin-right: 10px;
+}
+
+.product{
+    justify-content: space-evenly;
+}
+
+.shirt-div{
+    flex-wrap: wrap;
+}
+
+.shirt-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-slot:hover{
+    background-color: rgb(58, 177, 165);
+}
+
+.shirt-button:hover{
+    background-color: white;
+    border-color: rgb(255, 255, 255);
+    color: turquoise;
+}
+
+.column-text:hover{
+    border-bottom: 1px solid white;
+}
+
 @media only screen and (min-width : 1700px) {
 
 .header{
@@ -168,16 +271,18 @@
 
 .shirt-div{
     width: 700px;
-    display: flex;
+    display: flex;    
     justify-content: center;
     align-items: center;
 }
 
 .shirt{
+    max-width: 450px;
     width: 450px;
 }
 
 .shirt-content{
+    padding-left: 10px;
     width: 850px;
     height: 100%;
     display: flex;
@@ -256,8 +361,7 @@
 
 .product{
     width: 500px;
-    height: 100%;
-    border-left: 1px solid rgb(179, 179, 179);
+    height: 100%;    
     display: flex;
 }
 
@@ -601,7 +705,7 @@
     }
 
     .shirt-div{
-        width: 600px;
+        width: 350px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -690,8 +794,8 @@
     .product{
         width: 400px;
         height: 100%;
-        border-left: 1px solid rgb(179, 179, 179);
-        display: flex;
+        display: flex;        
+        
     }
 
     .pf{
@@ -1034,7 +1138,7 @@
             }
             
             .shirt-div{
-                width: 600px;
+                width: 350px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1123,7 +1227,7 @@
             .product{
                 width: 300px;
                 height: 100%;
-                border-left: 1px solid rgb(179, 179, 179);
+                
                 display: flex;
             }
             
@@ -1311,7 +1415,7 @@
                 
                 .basket , .money , .search , .nav-bar , .product-button , .first-block{
                     display: none;
-                }
+                }           
 
                 .header{
                     width: 100%;
@@ -1388,28 +1492,36 @@
                 }
                 
                 .first-shirt{
-                    width: 600px;
+                    width: 100%;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
                 }
                 
+                .sh{
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                }
+
                 .shirt{
-                    width: 35%;
+                    width: 70%;
                 }
                 
                 .second-shirt{
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;       
+                    justify-content: center;
+                    flex-wrap: wrap; 
                 }
                 
                 .shirt-title{
+                    text-align: center;
                     text-align: left;
-                    font-size: 60px;
+                    font-size: 50px;
                     color: white;
                     font-family: 'Bebas Neue', cursive;
-                    line-height: 0.7;
                 }
                 
                 .shirt-desc{
@@ -1437,7 +1549,7 @@
                 .third-shirt{
                     width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
                 }
 
@@ -1484,7 +1596,7 @@
                 .product{
                     width: 150px;
                     height: 100%;
-                    border-left: 1px solid rgb(179, 179, 179);
+                    
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -1719,7 +1831,7 @@
                 
                     .first-block-mobile{
                         width: 100%;
-                        height: 300px;
+                        height: auto;
                         background-color: rgb(70, 184, 172);
                         display: flex;
                         justify-content: center;
@@ -1739,28 +1851,38 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        flex-wrap: nowrap;
+                    }
+                    
+                    .sh{
+                        width: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     
                     .shirt{
-                        width: 30%;
+                        width: 60%;
                     }
-                    
+
                     .second-shirt{
                         width: 100%;
                         display: flex;
-                        justify-content: space-evenly;       
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;    
                     }
                     
                     .shirt-title{
+                        padding-top: 10px;
                         text-align: left;
-                        font-size: 30px;
+                        font-size: 26px;
                         color: white;
                         font-family: 'Bebas Neue', cursive;
                     }
                     
                     .shirt-desc{
                         font-family: 'Open Sans', sans-serif;
-                        font-size: 13px;
+                        font-size: 15px;
                         color: white;
                         text-align: left;
                         width: 55%;
@@ -1778,8 +1900,15 @@
                         border-radius: 5px;
                         width: 90px;
                         height: 25px;
+                        margin-top: 30px;
                     }
                     
+                    .shirt-img{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;                        
+                    }
+
                     .third-shirt{
                         width: 100%;
                         display: flex;
@@ -1801,7 +1930,7 @@
                     
                     .products{
                         width: 100%;
-                        height: 100px;
+                        height: auto;
                         display: flex;
                         justify-content: center;
                         -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
@@ -1819,8 +1948,7 @@
                     
                     .product{
                         width: 130px;
-                        height: 100%;
-                        border-left: 1px solid rgb(179, 179, 179);
+                        height: 100%;                        
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -1832,7 +1960,7 @@
                     }
                     
                     .product-img{
-                        width: 90%;
+                        width: 75%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -1918,7 +2046,8 @@
                     }
                     
                     .mesh-img{
-                        width: 50%;
+                        width: 40%;
+                        padding: 5 0 0 0;
                     }
                     
                     .mesh-title{
@@ -1996,6 +2125,14 @@
                         display: none;
                     }
                 
+                    .shirt-div{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                
                     .header{
                         width: 100%;
                         height: 50px;
@@ -2060,26 +2197,32 @@
                         display: flex;
                         justify-content: center;
                     }
+
+                    .first-block-content{
+                        width: 100%;
+                    }
                                         
                     .first-shirt{
                         width: 100%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                    }
-                    
-                    .shirt{
-                        width: 70%;
-                    }
-                    
+                        flex-wrap: nowrap;
+                    }  
+            
                     .second-shirt{
                         width: 100%;
                         display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;    
+                        justify-content: space-evenly;  
+                        flex-wrap: wrap;
                     }
-                    
+
+                    .shirt-img{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;                     
+                    }
+
                     .shirt-title{
                         width: 95%;
                         margin: 10 0 10;
@@ -2089,10 +2232,22 @@
                         font-family: 'Bebas Neue', cursive;
                         text-align: center;
                     }
+
+                    .sh{
+                        width: 70%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .shirt{
+                        width: 60%;
+                    }
                     
                     .shirt-desc{
+                        padding: 10 0 10 0;
                         font-family: 'Open Sans', sans-serif;
-                        font-size: 20px;
+                        font-size: 18px;
                         color: white;
                         text-align: left;
                         width: 80%;
@@ -2118,7 +2273,7 @@
                         flex-direction: column;                        
                         justify-content: space-evenly;
                         align-items: center;
-                        padding: 35 0 35 0;
+                        padding: 25 0 25 0;
                     }
                 
                     .balls{
@@ -2143,6 +2298,7 @@
                         -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
                         box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);                        
                         overflow: hidden;
+                        min-width: 0;
                     }
 
                     .products-content{
@@ -2151,15 +2307,17 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        min-width: 0;
                     }
                     
                     .product{
                         width: 49%;
-                        border-left: 1px solid rgb(179, 179, 179);
+                        
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        min-width: 0;
                     }
                     
                     .pf{
@@ -2167,7 +2325,7 @@
                     }
                     
                     .product-img{
-                        width: 90%;
+                        width: 80%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -2190,7 +2348,8 @@
                     .product-title{
                         font-family: 'Bebas Neue', cursive;
                         color: rgb(163, 163, 163);
-                        font-size: 20px;
+                        font-size: 13px;
+                        text-align: center;
                     }
                     
                     .p3{
@@ -2254,10 +2413,11 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        padding: 5 0 0 0;
                     }
                     
                     .mesh-img{
-                        width: 50%;
+                        width: 40%;
                     }
                     
                     .mesh-title{
