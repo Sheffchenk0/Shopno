@@ -43,10 +43,12 @@
 
 .second-shirt .slick-dots{
     display: flex;
+    align-self: center;
 }
 
 .second-shirt .slick-dots li{
     list-style: none;
+    align-self: center;
 }
 
 .second-shirt .slick-dots button{
@@ -57,6 +59,7 @@
     border: none;
     border-radius: 100%;
     margin: 0 8 0 8;
+    align-self: center;
 }
 
 .second-shirt .slick-arrow{
@@ -2236,7 +2239,7 @@
 
                     .shirt-title{
                         width: 95%;
-                        margin: 10 0 10;
+                        margin: 10px 0px 10px;
                         text-align: left;
                         font-size: 35px;
                         color: white;
