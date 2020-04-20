@@ -54,6 +54,9 @@
     height: 10px;
     background-color: tomato;
     font-size: 0;
+    border: none;
+    border-radius: 100%;
+
 }
 
 .second-shirt .slick-arrow{
