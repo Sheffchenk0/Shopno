@@ -50,7 +50,10 @@
 }
 
 .second-shirt .slick-dots button{
-
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    font-size: 0;
 }
 
 .second-shirt .slick-arrow{
