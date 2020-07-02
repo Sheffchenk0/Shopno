@@ -205,12 +205,14 @@ button{
     box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
 }
 
+
 .about__img{
-    position: absolute;
-    left: 60%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
     z-index: 1;
-    transform: translateX(-45%);
-    height: 100%;
+    left: 50%;
+    transform: translateX(-24%);
 }
 
 .about__info{
@@ -485,8 +487,8 @@ button{
 }
 
 .reviews__images{
-    overflow: hidden;
-    position: relative;    
+    width: 350px;
+    position: relative;  
     border-radius: 3px;
     -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
@@ -494,23 +496,103 @@ button{
 }
 
 
-
-.reviews__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 665px;
-    height: 362px;
-    margin-left: 80px;
-    background-color: #eaebed;
-    padding: 100 90 60 90;
+.reviews__images{
 }
 
+.reviews__image__slider{
+    position: relative;
+    overflow: hidden;
+}
+
+ .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    position: absolute;
+    z-index: 222;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+
+
+.slick-dots li{
+    list-style: none;
+    margin: 20 5px;
+}
+
+ .slick-dots button{
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-size: 0;
+    color: transparent;
+    display: flex;
+    align-self: center;
+    border: 1px solid rgb(219, 219, 219);
+}
+ .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+ }
+
+ .slick-active button{
+    background-color: #71f6eb;
+    border: none;
+}
+
+
+.reviews__info{
+    height: 352px;
+    background-color: #eaebed;
+    padding: 80 50 40 50;
+    text-align: center;
+}
+
+.reviews__info__slider{
+    width: 665px;
+    height: 400px;
+    margin-left: 80px;    
+    overflow: hidden;
+    position: relative;
+}
+
+.reviews__info__slider .slick-arrow{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 50px;
+    height: 48px;
+    color: transparent;
+    overflow: hidden;
+    background-color: #eaebed;
+}
+
+.reviews__info__slider .slick-prev{
+    background: url('./img/SVG/services/left-arrow.svg') 50% 50% / 100% no-repeat;
+    content: '';
+    right: 50;
+    background-size: 40%;  
+    background-color: #eaebed;  
+}
+
+.reviews__info__slider .slick-next{
+    content: '';
+    right: 0;
+    background: url('./img/SVG/services/right-arrow.svg') 50% 50% / 100% no-repeat;
+    background-size: 40%;
+    background-color: #eaebed;
+}
 
 .text--center{
     text-align: center;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .font--size--25{
@@ -526,7 +608,8 @@ button{
     font-weight: 400;
 }
 
-.reviews__star{
+.reviews__star{    
+    margin-top: 15px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -566,7 +649,7 @@ button{
 
 .adress{
     width: 100%;
-    background-image: url('img/adress.png');
+    background-color: #f8fafa;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -650,9 +733,24 @@ button{
     color: #a0acb4;
 }
 
+/* SLIDER */
+
+/* Review images slider */
+
+.reviews__images{
+    min-width: 0;
+}
+
+.slick-track{
+    display: flex;
+}
+
+/* Review info slider */
+
+
+
 
     @media (max-width: 1171px){
-
 
     /* Header */
 
@@ -732,21 +830,20 @@ button{
         position: relative;
         height: 350px;
     }
-
-    .reviews__img{
-        width: 100%;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
     
     .reviews__info{
         padding: 70 60 40 60;
         width: 600px;
-        height: 300px;
-        margin-left: 40px;
+        height: 300px;        
     }
 
+    .reviews__info__slider{
+        width: 600px;
+        height: 348px;
+        margin-left: 40px;
+        overflow: hidden;
+        position: relative;
+    }
 
     /* Adress */
     
@@ -812,6 +909,8 @@ button{
         width: 300px;
         height: 400px;
     }
+
+
 
     .about__info{
         width: 450px;
@@ -1085,14 +1184,18 @@ button{
         }
 
         .reviews__info{
-            margin: 0;
+        }
+
+        .reviews__info__slider{
             max-width: 100%;
+            margin: 0;
         }
 
         /* Comp */
 
         .comp__item{
-            padding: 55;
+            width: 200px;
+            padding: 20 50;
         }
 
         /* Adress */
@@ -1358,14 +1461,34 @@ button{
 
         /* Reviews */
         
+        .reviews .container{
+            padding: 0;
+        }
+
         .reviews{
             padding: 30 0;
         }
 
+
         .reviews__info{
+            border: 1px solid white;
+            border-top: none;
+            border-bottom: none;
             height: auto;
             padding: 20px;
+        }
+
+        .reviews__info__slider{
+            width: 100%;
             display: block;
+            height: auto;
+            padding-bottom: 0px;
+            padding: 0 70px;
+        }
+
+        .reviews__info__slider .slick-arrow{
+            width: 0;
+            height: 0;
         }
 
         .review__desc{
@@ -1398,11 +1521,14 @@ button{
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0;
+            width: 100px;
             padding: 15 0;
         }
 
         .comp__img{
-            width: 56px;
+            padding: 0;
+            width: 60px;
         }
 
         /* Adress */
@@ -1620,6 +1746,10 @@ button{
             padding: 30 0 0 0;
         }
 
+        .reviews__info__slider{
+            padding: 0 50;
+        }
+
         .reviews .container{
             padding: 0;
         }
@@ -1627,6 +1757,15 @@ button{
         .reviews__content{
             margin-top: 30px;
         }
+
+        .review__desc{
+            font-size: 12px;
+        }
+
+        .reviews__star{
+            margin-top: 10px;
+        }
+
 
         .reviews__images{
             max-width: 100%;

@@ -94,7 +94,7 @@
             </div>
             <div class="about__content">
                 <div class="about__images">
-                    <img src="./img/about/chair.jpg" class="about__img" alt="" srcset="">
+                    <img src="./img/about/chair.jpg" id="about__img" class="about__img" alt="" srcset="">             
                 </div>
                 <div class="about__info">
                     <span class="about__info__first__title about__info__title">
@@ -518,32 +518,65 @@
             </div>
             <div class="reviews__content">
                 <div class="reviews__images">
-                    <img src="./img/team/human3.jpg" class="reviews__img" alt="" srcset="">
+                    <div class="reviews__image__slider">
+                        <img src="./img/team/human3.jpg" class="reviews__img" alt="" srcset="">
+                        <img src="./img/team/human4.jpg" class="reviews__img" alt="" srcset="">
+                        <img src="./img/team/human5.jpg" class="reviews__img" alt="" srcset="">
+                        <img src="./img/team/human1.jpg" class="reviews__img" alt="" srcset="">
+                        <img src="./img/team/human2.jpg" class="reviews__img" alt="" srcset="">
+                    </div>
                 </div>
-                <div class="reviews__info">
-                    <div class="team__item__h text--center font--size--25">
-                        AL RAYHAN <span class="team__work font--size--18">/ UI Designer</span>
+                <div class="reviews__info__slider">
+                    <div class="reviews__info">
+                        <div class="team__item__h text--center font--size--25">
+                            AL RAYHAN <span class="team__work font--size--18">/ UI Designer</span>
+                        </div>
+                        <span class="review__desc">Lorem Ipsum is simply dummy text of the printing and you 
+                            standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </span>
+                        <div class="reviews__star">
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                        </div>
                     </div>
-                    <span class="review__desc">Lorem Ipsum is simply dummy text of the printing and you 
-                        standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </span>
-                    <div class="reviews__star">
-                        <svg class="star">
-                            <use xlink:href="#star" class=""></use>
-                        </svg>
-                        <svg class="star">
-                            <use xlink:href="#star" class=""></use>
-                        </svg>
-                        <svg class="star">
-                            <use xlink:href="#star" class=""></use>
-                        </svg>
-                        <svg class="star">
-                            <use xlink:href="#star" class=""></use>
-                        </svg>
-                        <svg class="star">
-                            <use xlink:href="#star" class=""></use>
-                        </svg>
-                    </div>
+                    <div class="reviews__info">
+                        <div class="team__item__h text--center font--size--25">
+                            AL RAYHAN <span class="team__work font--size--18">/ UI Designer</span>
+                        </div>
+                        <span class="review__desc">Lorem Ipsum is simply dummy text of the printing and you 
+                            standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </span>
+                        <div class="reviews__star">
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                                        <svg class="star">
+                                            <use xlink:href="#star" class=""></use>
+                                        </svg>
+                        </div>
+                    </div>               
                 </div>
             </div>
         </div>
@@ -612,8 +645,10 @@
         </div>
     </div>
 </div>
-
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
+
 
 </html>

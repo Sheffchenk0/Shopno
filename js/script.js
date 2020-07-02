@@ -26,7 +26,9 @@ $(function(){
         }else{
             header.removeClass('fixed');
         }
-    
+
+     
+        
     });
     
     $("[data-scroll]").on("click", function(event) {
@@ -70,4 +72,22 @@ $(function(){
 
     });
 
+    // Slider
+
+    $('.about__slider').slick({
+        arrows: false,
+        dots: true,
+        speed: 400
+        
+    });
+
+    $('.reviews__image__slider').slick({
+        arrows: false,
+        dots: true,
+        speed: 400
+        
+    });
+    $('.reviews__info__slider').slick({
+        speed: 410,
+    });
 });
