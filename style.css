@@ -205,12 +205,12 @@ button{
     box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
 }
 
+
 .about__img{
-    position: absolute;
-    left: 60%;
-    z-index: 1;
-    transform: translateX(-45%);
     height: 100%;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-25%);
 }
 
 .about__info{
@@ -647,7 +647,7 @@ button{
 
 .adress{
     width: 100%;
-    background-image: url('img/adress.png');
+    background-color: #f8fafa;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -907,6 +907,8 @@ button{
         width: 300px;
         height: 400px;
     }
+
+
 
     .about__info{
         width: 450px;
@@ -1329,11 +1331,12 @@ button{
         .about__images{
             width: 100%;
             box-shadow: none;
+            display: flex;
+            justify-content: center;
         }
 
         .about__img{
-            left: 30%;
-            transform: translateX(-30%);
+            margin: 0 auto;
         }
 
         .about__info{
