@@ -46,12 +46,20 @@ $(function(){
     $('.burger').on('click' , function func(event){
         event.preventDefault();
         $('.nav').toggleClass('nav-show');
-        // $('.nav-svg').toggleClass('nav-show');
-
+        
         let obj1 = document.querySelector('.nav');
+        let dsp = window.getComputedStyle(obj1, null).getPropertyValue("display");
+        console.log(dsp);
+        
+        if(dsp == 'flex' & window.innerWidth <= 421){
+            document.body.style.overflowY = "hidden";
+        }else{
+            document.body.style.overflowY = "scroll";
+            
+        }
         let headerH = $('.header__inner').innerHeight();
         let count = window.innerHeight - headerH;        
-        document.getElementById('nav').style.height = `${count}`;
+        // document.getElementById('nav').style.height = `${count}`;
     });
 
     $(window).resize(function() {
