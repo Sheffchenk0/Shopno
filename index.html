@@ -1,311 +1,619 @@
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/36b3e618a3.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPNO</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1\slick\slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">Aditi</div>
-            <div class="search">
-                <input type="text" class="search-input" placeholder="Поиск...">
-                <a href="" class="search-button"><i class="fas fa-search"></i></a>
-            </div>
-            
-            <div class="balance">
-                <a href="" class="search-button-mobile"><i class="fas fa-search"></i></a>
-                <a href=""><i class="basket fas fa-shopping-basket"></i></a>
-                <a href=""><span class="money">235.23$</span></a>                
-                    <div class="burger">
-                        <div class="burg"></div>
-                        <div class="burg"></div>
-                        <div class="burg"></div>
-                    </div>
-            </div>
-        </div>
-    </header>
-    <div class="nav-bar">
-        <a href=""><div class="bar-content">
-            <span class="nav-slot nav1">HOME</span>
-            <span class="nav-slot nav2">SALE</span>
-            <span class="nav-slot nav3">HANDBAGS</span>
-            <span class="nav-slot nav4">WALLETS</span>
-            <span class="nav-slot nav5">ACCESSORIES</span>
-            <span class="nav-slot nav6">MENS STORE</span>
-            <span class="nav-slot nav7">SHOES</span>
-            <span class="nav-slot nav8">VINTAGE</span>
-            <span class="nav-slot nav9">SERVICES</span>
-            <span class="nav-slot nav10">ABOUT US</span>
-        </div></a>       
-    </div>
-    <div class="first-block">
-        <div class="first-block-content">
-            <div class="shirt-div">                
-                <div class="shirt-img">
-                    <img src="images/shirt.png" alt="" class="shirt">
-                </div>                
-                <div class="shirt-img">
-                    <img src="images/shirt.png" alt="" class="shirt">
-                </div>                
-                <div class="shirt-img">
-                    <img src="images/shirt.png" alt="" class="shirt">
-                </div>
-                <div class="shirt-img">
-                    <img src="images/shirt.png" alt="" class="shirt">
-                </div>
-                <div class="shirt-img">
-                    <img src="images/shirt.png" alt="" class="shirt">
-                </div>
-            </div>
-            <div class="shirt-content">
-                <span class="shirt-title">Cowhide Standard Crew</span>
-                <span class="shirt-desc">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </span>
-                <a href=""><span class="shirt-button">SHOP NOW</span></a>
-            </div>
-        </div>
-    </div>
-    <div class="first-block-mobile">
-        <div class="first-block-content">
-            <div class="first-shirt">
-                <span class="shirt-title">Cowhide Standard Crew</span>
-            </div>
-            <div class="second-shirt">     
-                <div class="shirt-img">
-                    <div class="sh">
-                        <img src="images/shirt.png" alt="" class="shirt">
-                    </div>
-                    <span class="shirt-desc">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </span>
-                </div>
-                <div class="shirt-img">
-                    <div class="sh">
-                        <img src="images/shirt.png" alt="" class="shirt">
-                    </div>
-                    <span class="shirt-desc">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </span>
-                </div>
-                <div class="shirt-img">
-                    <div class="sh">
-                        <img src="images/shirt.png" alt="" class="shirt">
-                    </div>
-                    <span class="shirt-desc">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </span>
-                </div>
-                <div class="shirt-img">
-                    <div class="sh">
-                        <img src="images/shirt.png" alt="" class="shirt">
-                    </div>
-                    <span class="shirt-desc">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </span>
-                </div>
-                <div class="shirt-img">
-                    <div class="sh">
-                        <img src="images/shirt.png" alt="" class="shirt">
-                    </div>
-                    <span class="shirt-desc">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </span>
-                </div>
-            </div>  
-            <div class="third-shirt">
-                <span class="shirt-button">SHOP NOW</span>
-            </div>
-        </div>
-    </div>
-    <div class="products">
-        <div class="products-content">
-            <!-- <div class="left-arrow product-arrow"><i class="fas fa-chevron-left"></i></div> -->            
-            <div class="product">
-                <div class="product-img">
-                    <img src="images/shoes.png" alt="" class="product-image">
-                </div>
-                <div class="product-info">
-                    <a href=""><span class="product-title">BRANDED SHOES</span></a>
-                    <a href=""><span class="product-button">SHOP</span></a>
-                </div>
-            </div>            <div class="product">
-                <div class="product-img">
-                    <img src="images/shoes.png" alt="" class="product-image">
-                </div>
-                <div class="product-info">
-                    <a href=""><span class="product-title">BRANDED SHOES</span></a>
-                    <a href=""><span class="product-button">SHOP</span></a>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="images/shoes.png" alt="" class="product-image">
-                </div>
-                <div class="product-info">
-                    <a href=""><span class="product-title">BRANDED SHOES</span></a>
-                    <a href=""><span class="product-button">SHOP</span></a>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="images/shoes.png" alt="" class="product-image">
-                </div>
-                <div class="product-info">
-                    <a href=""><span class="product-title">BRANDED SHOES</span></a>
-                    <a href=""><span class="product-button">SHOP</span></a>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img">
-                    <img src="images/shoes.png" alt="" class="product-image">
-                </div>
-                <div class="product-info">
-                    <a href=""><span class="product-title">BRANDED SHOES</span></a>
-                    <a href=""><span class="product-button">SHOP</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="featured-products">
-        <div class="featured-products-content">
-            <span class="featured-products-title">FEATURED PRODUCTS</span>
-        </div>
-    </div>
-    <div class="mesh">
-        <div class="mesh-content">
-            <div class="mesh-block">
-                <div class="mesh-image">
-                    <img src="images/port.png" alt="" class="mesh-img">
-                </div>
-                <a href=""><span class="mesh-title">
-                    BRANDED SHOE
-                </span></a>
-                <div class="mesh-buy">
-                    <a href=""></a><span class="mesh-cost">300$</span></a>
-                    <span class="mesh-button"><a href="">BUY NOW</a></span>
-                </div>
-            </div>
-            <div class="mesh-block">
-                <div class="mesh-image">
-                    <img src="images/port.png" alt="" class="mesh-img">
-                </div>
-                <a href=""><span class="mesh-title">
-                    BRANDED SHOE
-                </span></a>
-                <div class="mesh-buy">
-                    <a href=""></a><span class="mesh-cost">300$</span></a>
-                    <span class="mesh-button"><a href="">BUY NOW</a></span>
-                </div>
-            </div>
-            <div class="mesh-block">
-                <div class="mesh-image">
-                    <img src="images/port.png" alt="" class="mesh-img">
-                </div>
-                <a href=""><span class="mesh-title">
-                    BRANDED SHOE
-                </span></a>
-                <div class="mesh-buy">
-                    <a href=""></a><span class="mesh-cost">300$</span></a>
-                    <span class="mesh-button"><a href="">BUY NOW</a></span>
-                </div>
-            </div>
-            <div class="mesh-block">
-                <div class="mesh-image">
-                    <img src="images/port.png" alt="" class="mesh-img">
-                </div>
-                <a href=""><span class="mesh-title">
-                    BRANDED SHOE
-                </span></a>
-                <div class="mesh-buy">
-                    <a href=""></a><span class="mesh-cost">300$</span></a>
-                    <span class="mesh-button"><a href="">BUY NOW</a></span>
-                </div>
-            </div>
-            <div class="mesh-block">
-                <div class="mesh-image">
-                    <img src="images/port.png" alt="" class="mesh-img">
-                </div>
-                <a href=""><span class="mesh-title">
-                    BRANDED SHOE
-                </span></a>
-                <div class="mesh-buy">
-                    <a href=""></a><span class="mesh-cost">300$</span></a>
-                    <span class="mesh-button"><a href="">BUY NOW</a></span>
-                </div>
-            </div>
-            <div class="mesh-block">
-                <div class="mesh-image">
-                    <img src="images/port.png" alt="" class="mesh-img">
-                </div>
-                <a href=""><span class="mesh-title">
-                    BRANDED SHOE
-                </span></a>
-                <div class="mesh-buy">
-                    <a href=""></a><span class="mesh-cost">300$</span></a>
-                    <span class="mesh-button"><a href="">BUY NOW</a></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="column">
-                <span class="column-title">
-                    FEATURED SALE
-                </span>
-                <a href=""><span class="column-text">Yanni krak</span></a>
-                <a href=""><span class="column-text">Alex Benni</span></a>
-                <a href=""><span class="column-text">Delphi Sanni</span></a>
-                <a href=""><span class="column-text">Olli Black</span> </a>
-                <a href=""><span class="column-text">Link Igor</span></a>
-                <a href=""><span class="column-text">Binni beach</span></a>
-                <a href=""><span class="column-text">Abram lught</span></a>
-                <a href=""><span class="column-text">Easer Oper</span></a>
-                <a href=""><span class="column-text">Banny Buks</span></a>           
-            </div>
-            <div class="column">
-                <span class="column-title">
-                    FEATURED SALE
-                </span>
-                <a href=""><span class="column-text">Yanni krak</span></a>
-                <a href=""><span class="column-text">Alex Benni</span></a>
-                <a href=""><span class="column-text">Delphi Sanni</span></a>
-                <a href=""><span class="column-text">Olli Black</span> </a>
-                <a href=""><span class="column-text">Link Igor</span></a>
-                <a href=""><span class="column-text">Binni beach</span></a>
-                <a href=""><span class="column-text">Abram lught</span></a>
-                <a href=""><span class="column-text">Easer Oper</span></a>
-                <a href=""><span class="column-text">Banny Buks</span></a>            
-            </div>
-            <div class="column">
-                <span class="column-title">
-                    FEATURED SALE
-                </span>
-                <a href=""><span class="column-text">Yanni krak</span></a>
-                <a href=""><span class="column-text">Alex Benni</span></a>
-                <a href=""><span class="column-text">Delphi Sanni</span></a>
-                <a href=""><span class="column-text">Olli Black</span> </a>
-                <a href=""><span class="column-text">Link Igor</span></a>
-                <a href=""><span class="column-text">Binni beach</span></a>
-                <a href=""><span class="column-text">Abram lught</span></a>
-                <a href=""><span class="column-text">Easer Oper</span></a>
-                <a href=""><span class="column-text">Banny Buks</span></a>         
-            </div>
-            <div class="column">
-                <span class="column-title">
-                    FEATURED SALE
-                </span>
-                <a href=""><span class="column-text">Yanni krak</span></a>
-                <a href=""><span class="column-text">Alex Benni</span></a>
-                <a href=""><span class="column-text">Delphi Sanni</span></a>
-                <a href=""><span class="column-text">Olli Black</span> </a>
-                <a href=""><span class="column-text">Link Igor</span></a>
-                <a href=""><span class="column-text">Binni beach</span></a>
-                <a href=""><span class="column-text">Abram lught</span></a>
-                <a href=""><span class="column-text">Easer Oper</span></a>
-                <a href=""><span class="column-text">Banny Buks</span></a>            
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
-<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/slick.js"></script>
+<svg style="display: none;">
+    <symbol id="arrow-left" viewBox="0 0 31.49 31.49">  
+        <path style="" d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+            C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+            c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24">  
+        <path d="m23.363 8.584-7.378-1.127-3.307-7.044c-.247-.526-1.11-.526-1.357 0l-3.306 7.044-7.378 1.127c-.606.093-.848.83-.423 1.265l5.36 5.494-1.267 7.767c-.101.617.558 1.08 1.103.777l6.59-3.642 6.59 3.643c.54.3 1.205-.154 1.103-.777l-1.267-7.767 5.36-5.494c.425-.436.182-1.173-.423-1.266z" fill="#ffc107"/>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 24 24">  
+        <g>
+            <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+        </g>
+    </symbol>
 
+    <symbol id="twitter" viewBox="0 0 512 512">  
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+        </g>
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 24 24">  
+        <g>
+            <path d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"/>
+        </g>
+    </symbol>
+</svg>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#" class="header__logo">
+                sh<span class="header__logo__O" id="h__O">O</span>pno
+            </a>
+            <nav class="nav">
+                <span class="nav__element" data-scroll=".about">About</span>
+                <span class="nav__element" data-scroll=".works">Works</span>
+                <span class="nav__element" data-scroll=".services">Services</span>
+                <span class="nav__element" data-scroll=".team">Team</span>
+                <span class="nav__element" data-scroll=".reviews">Reviews</span>
+                <span class="nav__element" data-scroll=".adress">Feedback</span>
+            </nav>
+            <button type="button" class="burger">
+                <span class="burger__item">Menu</span>
+                <span class="burger__item">Menu</span>
+                <span class="burger__item">Menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">
+                Say Hello to <span class="text--blue">SHOPNO!</span>
+                <p class="intro__title__p">
+                    <span class="text--blue">
+                        Agency</span> 
+                    CORPORATE SHOPNO Theme
+                </p>            
+            </h1>
+            <a class="intro__button" data-scroll=".adress">Contact Us</a>
+            <img src=".\img\header\cup.png" alt="" srcset="" class="cup">
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__title">
+                About Us
+            </div>
+            <div class="about__subtitle">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+            <div class="about__content">
+                <div class="about__images">
+                    <img src="./img/about/chair.jpg" class="about__img" alt="" srcset="">
+                </div>
+                <div class="about__info">
+                    <span class="about__info__first__title about__info__title">
+                        We Actually Do amazing works
+                    </span>
+                    <span class="about__info__first__desc about__info__desc">
+                        A visual approach is an approach to a runway at an airport 
+                        conducted under instrument flight rules. The pilot must at alltimes have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
+                        </br>
+                        <p class="about__info__desc">aircraft in approach correct sight. conducted under 
+                            instrument flight rules.</p>
+                    </span>
+                    <span class="about__info__second__title about__info__title">
+                        why we are the great?
+                    </span>
+                    <span class="about__info__second__desc about__info__desc">
+                        A visual approach is an approach to a runway at an airport 
+                        conducted under instrument flight rules.
+                        The preceding aircraft in approach correct sight.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="works">
+    <div class="container">
+        <div class="works__inner">
+            <div class="works__title">
+                featured works
+            </div>
+            <div class="works__subtitle">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+            <div class="work__items">
+                <div class="work__item">
+                    <img src="img/works/banner1.jpg" alt="" srcset="" class="work__img">
+                </div>
+                <div class="work__item">
+                    <img src="img/works/banner2.jpg" alt="" srcset="" class="work__img">
+                </div>
+                <div class="work__item">
+                    <img src="img/works/banner3.jpg" alt="" srcset="" class="work__img">
+                </div>
+                <div class="work__item">
+                    <img src="img/works/banner4.jpg" alt="" srcset="" class="work__img">
+                </div>
+                <div class="work__item">
+                    <img src="img/works/banner5.jpg" alt="" srcset="" class="work__img">
+                </div>
+                <div class="work__item">
+                    <img src="img/works/banner6.jpg" alt="" srcset="" class="work__img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="services">
+    <div class="container">
+        <div class="services__inner">
+            <div class="services__title">
+                our services
+            </div>
+            <div class="works__subtitle">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+            <div class="services__content">
+                <div class="services__brick brick-type-big">
+                    <img src="img/services/brick1.jpg" alt="" srcset="" class="service__img">
+                    <div class="brick-hover">
+                        <div class="brick__hover__title">
+                            Designing is The CooL LOVE FOR.
+                        </div>
+                        <div class="brick__hover__desc">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most ...</div>
+                        <div class="brick__hover__more">
+                            <span class="know__more">KNOW MORE</span>
+                            <svg class="arrow-left">
+                                <use xlink:href="#arrow-left" class="fff"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brick-click">
+                        <div class="brick__hover__title color--black">
+                            Designing is The CooL LOVE FOR.
+                        </div>
+                        <div class="brick__hover__desc color--black">
+                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                        </div>
+                    </div>                    
+                </div>
+                <div class="services__brick brick-type-small">
+                    <img src="img/services/brick2.jpg" alt="" srcset="" class="service__img">
+                    <div class="brick-hover">
+                        <div class="brick__hover__title">
+                            cool psd Design
+                        </div>
+                        <div class="brick__hover__desc">Our most popular service is our Virtual Receptionist ...</div>
+                        <div class="brick__hover__more">
+                            <span class="know__more">KNOW MORE</span>
+                            <svg class="arrow-left">
+                                <use xlink:href="#arrow-left" class="fff"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brick-click">
+                        <div class="brick__hover__title color--black">
+                            cool psd Design
+                        </div>
+                        <div class="brick__hover__desc color--black">
+                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates.
+                        </div>
+                    </div>                    
+                </div>
+                <div class="services__brick brick-type-big">
+                    <img src="img/services/brick3.jpg" alt="" srcset="" class="service__img">
+                    <div class="brick-hover">
+                        <div class="brick__hover__title">
+                            Designing is The CooL LOVE FOR.
+                        </div>
+                        <div class="brick__hover__desc">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most ...</div>
+                        <div class="brick__hover__more">
+                            <span class="know__more">KNOW MORE</span>
+                            <svg class="arrow-left">
+                                <use xlink:href="#arrow-left" class="fff"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brick-click">
+                        <div class="brick__hover__title color--black">
+                            Designing is The CooL LOVE FOR.
+                        </div>
+                        <div class="brick__hover__desc color--black">
+                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                        </div>
+                    </div>                    
+                </div>
+                <div class="services__brick brick-type-small">
+                    <img src="img/services/brick4.jpg" alt="" srcset="" class="service__img">
+                    <div class="brick-hover">
+                        <div class="brick__hover__title">
+                            PSD TO HTML KORI
+                        </div>
+                        <div class="brick__hover__desc">Our most popular service is our Virtual Receptionist ...</div>
+                        <div class="brick__hover__more">
+                            <span class="know__more">KNOW MORE</span>
+                            <svg class="arrow-left">
+                                <use xlink:href="#arrow-left" class="fff"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brick-click">
+                        <div class="brick__hover__title color--black">
+                            PSD TO HTML KORI
+                        </div>
+                        <div class="brick__hover__desc color--black">
+                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates.
+                        </div>
+                    </div>                    
+                </div>
+                <div class="services__brick brick-type-small">
+                    <img src="img/services/brick5.jpg" alt="" srcset="" class="service__img">
+                    <div class="brick-hover">
+                        <div class="brick__hover__title">
+                            cool psd Design
+                        </div>
+                        <div class="brick__hover__desc">Our most popular service is our Virtual Receptionist ...</div>
+                        <div class="brick__hover__more">
+                            <span class="know__more">KNOW MORE</span>
+                            <svg class="arrow-left">
+                                <use xlink:href="#arrow-left" class="fff"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brick-click">
+                        <div class="brick__hover__title color--black">
+                            cool psd Design
+                        </div>
+                        <div class="brick__hover__desc color--black">
+                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates.
+                        </div>
+                    </div>                    
+                </div>
+                <div class="services__brick brick-type-big">
+                    <img src="img/services/brick6.jpg" alt="" srcset="" class="service__img">
+                    <div class="brick-hover">
+                        <div class="brick__hover__title">
+                            Designing is The CooL LOVE FOR.
+                        </div>
+                        <div class="brick__hover__desc">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most ...</div>
+                        <div class="brick__hover__more">
+                            <span class="know__more">KNOW MORE</span>
+                            <svg class="arrow-left">
+                                <use xlink:href="#arrow-left" class="fff"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="brick-click">
+                        <div class="brick__hover__title color--black">
+                            Designing is The CooL LOVE FOR.
+                        </div>
+                        <div class="brick__hover__desc color--black">
+                            Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="team">
+    <div class="container">
+        <div class="team__inner">
+            <div class="team__title">
+                our services
+            </div>
+            <div class="team__subtitle">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+            <div class="team__items">
+                <div class="team__item">
+                    <img src="img/team/human1.jpg" alt="" srcset="" class="team__img">
+                    <div class="team__item__content__wrapper">
+                        <div class="team__item__content">
+                            <div class="team__item__h">
+                            AL RAYHAN <span class="team__work">/ UI Designer</span>
+                            </div>
+                            <div class="team__desc">
+                                Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            </div>
+                            <div class="social">
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>                    
+                            </div>   
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/human2.jpg" alt="" srcset="" class="team__img">
+                    <div class="team__item__content__wrapper">
+                        <div class="team__item__content">
+                            <div class="team__item__h">
+                            AL RAYHAN <span class="team__work">/ UI Designer</span>
+                            </div>
+                            <div class="team__desc">
+                                Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            </div>
+                            <div class="social">
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>                    
+                            </div>   
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/human3.jpg" alt="" srcset="" class="team__img">
+                    <div class="team__item__content__wrapper">
+                        <div class="team__item__content">
+                            <div class="team__item__h">
+                            AL RAYHAN <span class="team__work">/ UI Designer</span>
+                            </div>
+                            <div class="team__desc">
+                                Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            </div>
+                            <div class="social">
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>                    
+                            </div>   
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/human4.jpg" alt="" srcset="" class="team__img">
+                    <div class="team__item__content__wrapper">
+                        <div class="team__item__content">
+                            <div class="team__item__h">
+                            AL RAYHAN <span class="team__work">/ UI Designer</span>
+                            </div>
+                            <div class="team__desc">
+                                Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            </div>
+                            <div class="social">
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>                    
+                            </div>   
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/human5.jpg" alt="" srcset="" class="team__img">
+                    <div class="team__item__content__wrapper">
+                        <div class="team__item__content">
+                            <div class="team__item__h">
+                            AL RAYHAN <span class="team__work">/ UI Designer</span>
+                            </div>
+                            <div class="team__desc">
+                                Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            </div>
+                            <div class="social">
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>                    
+                            </div>   
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img src="img/team/human1.jpg" alt="" srcset="" class="team__img">
+                    <div class="team__item__content__wrapper">
+                        <div class="team__item__content">
+                            <div class="team__item__h">
+                            AL RAYHAN <span class="team__work">/ UI Designer</span>
+                            </div>
+                            <div class="team__desc">
+                                Lorem Ipsum is not simply is  an action designer random text It has roots in a piece. 
+                            </div>
+                            <div class="social">
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" target="_blank" class="social__item">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>                    
+                            </div>   
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="reviews">
+    <div class="container">
+        <div class="reviews__inner">
+            <div class="reviews__title">
+                About Us
+            </div>
+            <div class="reviews__subtitle">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+            <div class="reviews__content">
+                <div class="reviews__images">
+                    <img src="./img/team/human3.jpg" class="reviews__img" alt="" srcset="">
+                </div>
+                <div class="reviews__info">
+                    <div class="team__item__h text--center font--size--25">
+                        AL RAYHAN <span class="team__work font--size--18">/ UI Designer</span>
+                    </div>
+                    <span class="review__desc">Lorem Ipsum is simply dummy text of the printing and you 
+                        standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </span>
+                    <div class="reviews__star">
+                        <svg class="star">
+                            <use xlink:href="#star" class=""></use>
+                        </svg>
+                        <svg class="star">
+                            <use xlink:href="#star" class=""></use>
+                        </svg>
+                        <svg class="star">
+                            <use xlink:href="#star" class=""></use>
+                        </svg>
+                        <svg class="star">
+                            <use xlink:href="#star" class=""></use>
+                        </svg>
+                        <svg class="star">
+                            <use xlink:href="#star" class=""></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comp">
+    <div class="container">
+        <div class="comp__inner">
+            <div class="comp__item">
+                <img src="img/comp/comp1.png" class="comp__img" alt="" srcset="">
+            </div>
+            <div class="comp__item">
+                <img src="img/comp/comp2.png" class="comp__img" alt="" srcset="">
+            </div>
+            <div class="comp__item">
+                <img src="img/comp/comp3.png" class="comp__img" alt="" srcset="">
+            </div>
+            <div class="comp__item">
+                <img src="img/comp/comp4.png" class="comp__img" alt="" srcset="">
+            </div>
+            <div class="comp__item">
+                <img src="img/comp/comp5.png" class="comp__img" alt="" srcset="">
+            </div>
+            <div class="comp__item">
+                <img src="img/comp/comp6.png" class="comp__img" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="adress">
+    <div class="container adress--bg">
+        <div class="adress__inner">
+            <div class="adress__forms">
+                <input type="text" class="adress__form" placeholder="Name*">
+                <input type="text" class="adress__form" placeholder="Subject*">
+                <input type="text" class="adress__form" placeholder="E-mail*">
+                <textarea class="adress__form textarea" placeholder="Message*"></textarea>
+                <div class="send">SEND Message</div>
+            </div>
+            <div class="adress__info">
+                <div class="adress__text">
+                    <div class="adress__item">Adress line 1</div>
+                    <div class="adress__item">Adress line 2</div>
+                    <div class="adress__item">Phone: 8(800)555-35-35</div>
+                    <div class="adress__item">Fax: 8(800)555-35-35</div>
+                    <br>
+                    <div class="adress__item">E-mail: bladdem2017@gmail.com</div>
+                    <div class="adress__item">Web: sheffchenko.com</div>
+                </div>
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="map">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                    var setting = {"height":260,"width":'100%',"zoom":12,"queryString":"Шевченково, Харьковская область, Украина","place_id":"ChIJ8cL8EXAzJ0ERjjyvF-HBPdo","satellite":false,"centerCoord":[49.689210467519196,37.175451354492196],"cid":"0xda3dc1e117af3c8e","lang":"ru","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"222428"};
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=222428';
+                    s.async = true;
+                    s.onload = function (e) {
+                      window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                  })();</script><a href="https://1map.com/ru/map-embed">1 Map</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>

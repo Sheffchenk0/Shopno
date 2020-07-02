@@ -1,2499 +1,1635 @@
-*{
-    margin:0;
-    padding:0;
+*,:before,:after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
     text-decoration: none;
-    color: white;
-}
-
-.search-button-mobile , .first-block-mobile{
-    display: none ;
-}
-
-.slick-track{
-    display: flex;
-}
-
-.slick-list{
-    overflow: hidden;
-}
-
-.shirt-div .slick-dots{
-    display: flex;
-}
-
-
-
-.shirt-div .slick-dots li{
-    list-style: none;
-}
-
-.shirt-div .slick-dots button{
-    width: 15px;
-    height: 15px;
     border: none;
-    border-radius: 99999999px;
-    font-size: 0px;
-    margin: 0 8 0 8;
+    box-sizing: border-box;   
+    -webkit-font-smoothing: antialiased;
+    
 }
 
-.shirt-div .slick-dots{
-    display: flex;
-}
-
-
-.second-shirt .slick-dots{
-    display: flex;
-    align-self: center;
-}
-
-.second-shirt .slick-dots li{
-    list-style: none;
-    align-self: center;
-}
-
-.second-shirt .slick-dots button{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(255, 255, 255);
-    font-size: 0;
-    border: none;
-    border-radius: 100%;
-    margin: 0 8 0 8;
-    align-self: center;
-}
-
-.second-shirt .slick-arrow{
-    font-size: 0;
-    width: 100px;
-    height: 46px;
-    border: none;
-}
-
-.products-content .slick-arrow{
-    font-size: 0;
-    width: 100px;
-    height: 46px;
-    border: none;
-}
-
-.products-content .slick-arrow.slick-prev{
-    background: url('images/left.png') 0 50% / 100% no-repeat;
-    margin-left: 10px;
-}
-
-.products-content .slick-arrow.slick-next{
-    background: url('images/right.png') 0 50% / 100% no-repeat;
-    margin-right: 10px;
-}
-
-.product{
-    justify-content: space-evenly;
-}
-
-.shirt-div{
-    flex-wrap: wrap;
-}
-
-.shirt-img {
+.container{    
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15;
+}
+
+button{
+    background: none;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
 }
 
 
-
-.shirt-button:hover{
-    background-color: white;
-    border-color: rgb(255, 255, 255);
-    color: turquoise;
-}
-
-.nav-slot:hover{
-    background-color: rgb(63, 163, 153);
-}
-
-.column-text:hover{
-    border-bottom: 1px solid white;
-}
-
-@media only screen and (min-width : 1700px) {
+/* Header */
 
 .header{
     width: 100%;
-    height: 100px;
-    background: rgb(255, 255, 255);
+    height: 112px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
 }
 
-.header-content{
-    width: 1700px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;    
-}
-
-.logo{
-    font-family: 'Lobster', cursive;
-    font-size: 60px;
-    color: rgb(76, 207, 193);
-    display: flex;
-    align-items: center;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;    
-    padding-left: 50px;
-}
-
-.search{
-    display: flex;
-    align-items: center;
-}
-
-.search-input{
-    width: 536px;
-    height: 40px;
-    text-decoration: none;
-    border: 2px solid rgb(225, 225, 225);
-    color: rgb(71, 71, 71);
-    padding: 10 15 10 10;
-    font-size: 17px;
-    
-}
-
-.search-input:active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
-}
-
-.search-button{
-    margin-left: -27px;
-    color: rgb(202, 202, 202);
-}
-
-.balance{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 70 0 0;
-}
-
-.basket{
-    font-size: 55px;
-    color: rgb(76, 207, 193);
-    padding: 0 25 5 25;
-}
-
-.money{
-    font-size: 30px;
-    color: rgb(172, 172, 172);
-    font-family: 'Bebas Neue', cursive;
-}
-
-.nav-bar{
+.header__inner{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.header__logo{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 6 7;
+    border: 5px solid black;
+}
+
+.header__logo__O{
+    color: #77efe5;
+    font-size: 22px;
+}
+
+.color--white{
+    color: white;
+}
+
+.fixed{
+    position: fixed;
     height: auto;
-    background-color: rgb(76, 207, 193);
-    display: flex;
-    justify-content: center;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;    
+    padding: 10 0;
+    background-color: rgba(177, 177, 177, 0.253);
+    z-index: 999999;
 }
 
-.bar-content{
-    width: 1700px;
-    display: flex;
-}
+/* Nav */
 
-.nav-slot{
-    padding: 10 25 10 25;
-    border-left: 2px solid white;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+.nav{
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 25px;
 }
 
-.nav1{
-    border: none;
-    display:flex;
-    flex-grow: 1;
+.nav__element{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.1s linear;
 }
 
-.nav2{
-    flex-grow: 1;
+.nav__element:hover{
+    color: #77efe5;
 }
 
-.nav3{
-    flex-grow:1.4;
+/* Burger */
+
+.burger{
+    display: none;         
 }
 
-.nav4{
-    flex-grow: 1.3;
-}
+/* Intro */
 
-.nav5{
-    flex-grow: 1.6;
-}
-
-.nav6{
-    flex-grow: 1.5;
-}
-
-.nav7{
-    flex-grow: 1.2;
-}
-
-.nav8{
-    flex-grow: 1.3;
-}
-
-.nav9{
-    flex-grow: 1.4;
-}
-
-.nav10{
-    flex-grow: 1.4;
-}
-
-.first-block{
+.intro{
+    height: 805px;
     width: 100%;
-    height: 700px;
-    background-color: rgb(70, 184, 172);
+    background-color: #eff0f2;
+}
+
+.intro__inner{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.intro__title{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 200 0 0 0;
+    line-height: 1.6;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.14);
+    margin-bottom: 140px;
+}
+
+.text--blue{
+    background-color: #b2f2ee;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 8 8;
+}
+
+.intro__title__p{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.intro__button{
+    text-transform: uppercase;
+    border: 2px solid #777879;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 18 46;
+    border-radius: 2px;
+    transition: border-color .1s linear;
+    transition: background-color .1s linear;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;    
+    margin-bottom: 50px;
+}
+
+.intro__button:hover{
+    background-color: #b2f2ee;
+    border-color: #b2f2ee;
+    color: #fff;
+}
+
+.cup{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.about{
+    padding: 100 0;
+    background-color: #f8fafa;
+    width: 100%;
+}
+
+.about__inner{
+    text-align: center;
+    font-weight: bold;
+}
+
+.about__title , .works__title , .services__title , .team__title , .reviews__title{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 33px;
+    margin-bottom: 5px;
+}
+
+.about__subtitle , .works__subtitle , .works__subtitle , .team__subtitle , .reviews__subtitle{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 16px;    
+    text-transform: uppercase;
+}
+
+.about__content{
     display: flex;
+    margin-top: 100px;
     justify-content: center;
 }
 
-.first-block-content{
-    width: 1700px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
+.about__images{
+    width: 345px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;    
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
 }
 
-.shirt-div{
-    width: 700px;
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-}
-
-.shirt{
-    max-width: 450px;
-    width: 450px;
-}
-
-.shirt-content{
-    padding-left: 10px;
-    width: 850px;
+.about__img{
+    position: absolute;
+    left: 60%;
+    z-index: 1;
+    transform: translateX(-45%);
     height: 100%;
+}
+
+.about__info{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;    
-}
-
-.shirt-title{
     text-align: left;
-    font-size: 90px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    line-height: 0.9;
-}
-
-.shirt-desc{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 27px;
-    color: white;
-    text-align: left;
-}
-
-.shirt-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    border: 6px solid white;
-    border-radius: 20px;
-    width: 200px;
-    height: 70px;
-}
-
-.balls{
-    display: flex;
-
-}
-
-.circle{
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    border-radius: 10000000000000000px;
-    margin: 0 8 0 8;
-}
-
-.products{
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-}
-
-.products-content{
-    width: 1700px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.product-arrow{
-    width: 100px;
-    height: 100%;
-    font-size: 80px;
-    color: rgb(230, 230, 230);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.product{
     width: 500px;
-    height: 100%;    
-    display: flex;
+    margin-left: 100px;
 }
 
-.pf{
-    border: none;
+.about__info__title{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.product-img{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about__info__second__title{
+    margin-top: 30px;
 }
 
-.product-info{
-    width: 50%;
-    height: 100%;
+.about__info__desc{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    margin-top: 20px;
 }
 
-.product-image{
-    width: 500px;
-}
 
-.product-info{
+/* Works */
+
+.works__inner{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-
-.product-title{
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(163, 163, 163);
-    font-size: 37px;
-}
-
-.product-button{
-    width: 90px;
-    height: 45px;
-    background-color: rgb(70, 184, 172);
-    border-radius: 5px;
-    display: flex;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-
-.featured-products{
-    width: 100%;
-    height: 70px;
-    display: flex;
-    background-color: rgb(70, 184, 172);
-    justify-content: center;
-}
-
-.featured-products-content{
-    width: 1700px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 20px;
-}
-
-.featured-products-title{
-    font-size: 40px;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-}
-
-.mesh{
-    width: 100%;
-    display: flex;
-    justify-content: center;  
-}
-
-.mesh-content{
-    width: 1500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-    padding-bottom: 70px;
-}
-
-.mesh-block{
-    margin-top: 70px;
-    width: 400px;
-    height: 400px;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-    border-bottom: 8px solid rgb(70, 184, 172);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.mesh-image{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mesh-img{
-    width: 50%;
-}
-
-.mesh-title{
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(163, 163, 163);
-    font-size: 50px;
+    padding: 100 0;
     text-align: center;
 }
 
-.mesh-buy{
+.work__items{
     display: flex;
-    flex-direction: row;
-    width: 70%;
-    justify-content: space-evenly;   
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 120px;
 }
 
-.mesh-cost{
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(163, 163, 163);
-    font-size: 35px;
+.work__item{
+    width: 365px;
+    height: 353px;
+    margin: 5 5;
+    overflow: hidden;
+}
+
+/* Services */
+
+.services{
+    background-color: #f9fbfb;
+}
+
+.services__inner{
     display: flex;
+    flex-direction: column;
+    padding: 125 0;
+    text-align: center;
+    width: 100%;
+}
+
+.services__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.services__brick{
+    position: relative;
+    overflow: hidden;
+    margin: 3.5 3.5;
+    cursor: pointer;
+}
+
+.brick-hover , .brick-click{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .15s ease-in-out;
+    text-align: left;
+}
+
+.brick-hover{
+    padding: 140px 80px 60px 65px;
+    background-color: rgba(0, 0, 0, 0.60);    
+}
+
+.brick__hover__title{
+    color: #fff;
+    margin-bottom: 25px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.brick__hover__desc{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.services__brick:hover .brick-hover{
+    opacity: 1;
+}
+
+
+.brick__hover__more{
+    display: flex;
+    align-items: center;    
+}
+
+.know__more{
+    color: #fff;
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.arrow-left{
+    width: 24px;
+    fill: #fff;
+}
+
+
+.brick-click{
+    background-color: #71f5ea;
+    z-index: 2;
+    padding: 65 100 10 65;
+}
+
+.opacity{
+    opacity: 1;
+}
+
+.color--black{
+    color: black;
+}
+
+.brick-type-small .brick-click{
+    padding: 65 50 10 65;
+}
+
+/* Team */
+
+.team{
+    background-color: #fff;
+    text-align: center;
+}
+
+.team__inner{
+    display: flex;
+    flex-direction: column;
+    padding: 125 0;
+    text-align: center;
+    width: 100%;
+}
+
+.team__items{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team__item{
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.team__item__content__wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 185 30 30 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.team__item__content{
+    width: 100%;
+    height: 100%;
+    background-color: #6ff6eb;
+    transition: transform .2s ease;
+    transform: translateY(260px);
+}
+
+.team__item:hover .team__item__content{
+    transform: translateY(0px);
+}
+
+.team__item__h{
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.team__item__content{
+    padding: 32px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+
+.team__work{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #767070;
+    text-align: left;
+}
+
+.team__desc{
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.social{
+    display: flex;
+}
+
+.social__item{
+    margin-right: 9;
+}
+
+.social__icon{
+    width: 14px;
+    height: 14px;
+    transition: fill .1s linear;
+}
+
+.social__icon:hover{
+    fill: #fff;
+}
+
+/* Reviews */
+
+.reviews{
+    padding: 100 0;
+    background-color: #f8fafa;
+}
+
+.reviews__inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.reviews__content{
+    display: flex;
+    margin-top: 140px;
     justify-content: center;
     align-items: center;
 }
 
-.mesh-button{
-    width: 110px;
-    height: 45px;
-    border-radius: 5px;
-    background-color: rgb(70, 184, 172);
-    font-family: 'Bebas Neue', cursive;
-    color: white;
+.reviews__images{
+    overflow: hidden;
+    position: relative;    
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+
+
+
+.reviews__info{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 665px;
+    height: 362px;
+    margin-left: 80px;
+    background-color: #eaebed;
+    padding: 100 90 60 90;
+}
+
+
+.text--center{
+    text-align: center;
+    margin: 0;
+}
+
+.font--size--25{
     font-size: 25px;
 }
 
-.footer{
+.font--size--18{
+    font-size: 18px;
+}
+
+.review__desc{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.reviews__star{
+    display: flex;
     width: 100%;
-    background-color: rgb(70, 184, 172);
+    justify-content: center;
+}
+
+.star{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+/* Comp */
+
+.comp{
+    background-color: #fff;
+    padding: 50 0;
+}
+
+.comp__inner{
     display: flex;
     justify-content: center;
-    padding: 30 0 40 0;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.footer-content{
-    width: 1700px;
+.comp__item{
+    width: 25%;
+    padding: 30 90;
+}
+
+.comp__img{
+    width: 100%;
+}
+
+/* Adress */
+
+.adress{
+    width: 100%;
+    background-image: url('img/adress.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.adress__inner{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150 0;
 }
 
-.column{
+.adress__forms{
+    width: 615px;
+    height: 460px;
+    padding: 30px;
+    background-color: #495862de;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
 }
 
-.column-title{
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    font-size: 30px;
+.adress__info{
+    width: 500px;
+    height: 460px;
+    background-color: #495862de;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 29px;
 }
 
-.column-text{
+.adress__form{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #a0acb4;
+    font-weight: 400;
     font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(236, 236, 236);
-    margin-top: 2px;
+    outline:none;
+    color: #a0acb4;
 }
 
+.adress__form::placeholder{
+    color: #a0acb4;
 }
 
-    @media only screen and (min-width: 1400px) and (max-width: 1699px) {
-    
+.textarea{
+    height: 120px;
+    resize: none;
+}
+
+.send{
+    text-transform: uppercase;
+    width: 244px;
+    height: 53px;
+    background-color: #6eeee4;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+
+.send:hover{
+    background-color: #fafafa;
+}
+
+.map{
+    overflow: hidden;
+}
+
+
+.adress__item{
+    font-size: 15px;
+    font-weight: 400;
+    color: #a0acb4;
+}
+
+
+    @media (max-width: 1171px){
+
+
+    /* Header */
+
     .header{
         width: 100%;
-        height: 80px;
-        background: rgb(255, 255, 255);
-        display: flex;
-        justify-content: center;
-    }
-
-    .header-content{
-        width: 1400px;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;    
-    }
-
-    .logo{
-        font-family: 'Lobster', cursive;
-        font-size: 50px;
-        color: rgb(76, 207, 193);
-        display: flex;
-        align-items: center;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        user-select: none;    
-        padding-left: 40px;
-    }
-
-    .search{
+        height: auto;
+        padding: 20 0;
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
         display: flex;
         align-items: center;
     }
 
-    .search-input{
+    .header__inner{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    .header__logo{
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 6 7;
+        border: 5px solid black;
+    }
+
+    .header__logo__O{
+        color: #77efe5;
+        font-size: 22px;
+    }
+
+    .color--white{
+        color: white;
+    }
+
+    .fixed{
+        position: fixed;
+        height: auto;
+        padding: 10 0;
+        background-color: rgba(177, 177, 177, 0.253)
+    }
+
+    .brick-type-big{
         width: 500px;
-        height: 35px;
-        text-decoration: none;
-        border: 2px solid rgb(225, 225, 225);
-        color: rgb(71, 71, 71);
-        padding: 9 14 9 9;
-        font-size: 14px;
-        
+        position: relative;
+    }
+    
+    .brick-type-small{
+        width: 400px;
+        position: relative;
     }
 
-    .search-input:active, :hover, :focus {
-        outline: 0;
-        outline-offset: 0;
+    .service__img{
+        z-index: 1;
+        transform: translateX(-13%);
+    }
+    
+    .brick-hover{
+        padding: 70 60;
     }
 
-    .search-button{
-        margin-left: -27px;
-        color: rgb(202, 202, 202);
+    .brick-type-small .brick-click{
+        padding: 40px;
     }
 
-    .balance{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 30 0 0;
+    .brick-click{
+        padding: 40 50px;
     }
 
-    .basket{
-        font-size: 40px;
-        color: rgb(76, 207, 193);
-        padding: 0 10 5 25;
+    /* reviews */
+
+    .reviews__images{
+        width: 300px;
+        position: relative;
+        height: 350px;
     }
 
-    .money{
-        font-size: 25px;
-        color: rgb(172, 172, 172);
-        font-family: 'Bebas Neue', cursive;
+    .reviews__img{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .reviews__info{
+        padding: 70 60 40 60;
+        width: 600px;
+        height: 300px;
+        margin-left: 40px;
     }
 
-    .nav-bar{
+
+    /* Adress */
+    
+    .adress{
         width: 100%;
         height: auto;
-        background-color: rgb(76, 207, 193);
-        display: flex;
-        justify-content: center;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        user-select: none;    
+        padding: 50 0 50 0;
+        overflow: hidden;
     }
 
-    .bar-content{
-        width: 1400px;
-        display: flex;
-    }
 
-    .nav-slot{
-        padding: 8 23 8 23;
-        border-left: 2px solid white;
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 23px;
-    }
-
-    .nav1{
-        border: none;
-        display:flex;
-        flex-grow: 1;
-    }
-
-    .nav2{
-        flex-grow: 1;
-    }
-
-    .nav3{
-        flex-grow:1.4;
-    }
-
-    .nav4{
-        flex-grow: 1.3;
-    }
-
-    .nav5{
-        flex-grow: 1.6;
-    }
-
-    .nav6{
-        flex-grow: 1.5;
-    }
-
-    .nav7{
-        flex-grow: 1.2;
-    }
-
-    .nav8{
-        flex-grow: 1.3;
-    }
-
-    .nav9{
-        flex-grow: 1.4;
-    }
-
-    .nav10{
-        flex-grow: 1.4;
-    }
-
-    .first-block{
-        width: 100%;
-        height: 500px;
-        background-color: rgb(70, 184, 172);
-        display: flex;
+    .adress__inner{
         justify-content: center;
     }
 
-    .first-block-content{
-        width:  1400px;
-        height: 100%;
+    .adress__forms{
+        width: 480px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .adress__info{
+        width: 420px;
+        height: 400px;
+        margin-left: 20px;
+        padding: 0px;
+    }    
+
+    .adress__text{
+        padding: 20 20 5 20;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .shirt-div{
-        width: 350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .adress__item{
+        padding: 3px;
+        font-size: 16px;
     }
 
-    .shirt{
-        width: 300px;
-    }
-
-    .shirt-content{
-        width: 700px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;       
-    }
-
-    .shirt-title{
-        text-align: left;
-        font-size: 60px;
-        color: white;
-        font-family: 'Bebas Neue', cursive;
-        line-height: 0.7;
-    }
-
-    .shirt-desc{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 23px;
-        color: white;
-        text-align: left;
-    }
-
-    .shirt-button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        color: white;
-        font-family: 'Bebas Neue', cursive;
-        border: 4px solid white;
-        border-radius: 10px;
-        width: 150px;
+    .send{
+        width: 220px;
         height: 50px;
     }
 
-    .balls{
-        display: flex;
+    .map-9cd199b9cc5410cd3b1ad21cab2e54d3{
+        height: 270px;
     }
 
-    .circle{
-        width: 10px;
-        height: 10px;
-        background-color: white;
-        border-radius: 10000000000000000px;
-        margin: 0 5 0 5;
+    /* Comp */
+
+    .comp__item{
+        width: 30%;
     }
 
-    .products{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-        -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
+    .comp{
+        padding: 30px;
     }
 
-    .products-content{
-        width:  1400px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /* About */
+
+    .about__images{
+        width: 300px;
+        height: 400px;
     }
 
-    .product-arrow{
-        width: 80px;
-        height: 100%;
-        font-size: 60px;
-        color: rgb(230, 230, 230);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .about__info{
+        width: 450px;
+        margin-left: 70px;
     }
 
-    .product{
-        width: 400px;
-        height: 100%;
-        display: flex;        
-        
+    .about__info__title{
+        font-size: 18px;
     }
 
-    .pf{
-        border: none;
-    }
-
-    .product-img{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .product-info{
-        width: 50%;
-        height: 100%;
-    }
-
-    .product-image{
-        width: 200px;
-    }
-
-    .product-info{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-evenly;
-    }
-
-    .product-title{
-        font-family: 'Bebas Neue', cursive;
-        color: rgb(163, 163, 163);
-        font-size: 33px;
-    }
-
-    .product-button{
-        width: 80px;
-        height: 40px;
-        background-color: rgb(70, 184, 172);
-        border-radius: 4px;
-        display: flex;
-        color: white;
-        font-family: 'Bebas Neue', cursive;
-        justify-content: center;
-        align-items: center;
-        font-size: 23px;
-    }
-
-    .featured-products{
-        width: 100%;
-        height: 70px;
-        display: flex;
-        background-color: rgb(70, 184, 172);
-        justify-content: center;
-    }
-
-    .featured-products-content{
-        width:  1400px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding-left: 20px;
-    }
-
-    .featured-products-title{
-        font-size: 35px;
-        color: white;
-        font-family: 'Bebas Neue', cursive;
-    }
-
-    .mesh{
-        width: 100%;
-        display: flex;
-        justify-content: center;  
-    }
-
-    .mesh-content{
-        width: 1200px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: space-around;
-        padding-bottom: 70px;
-    }
-
-    .mesh-block{
-        margin-top: 70px;
-        width: 350px;
-        height: 350px;
-        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-        border-bottom: 8px solid rgb(70, 184, 172);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .mesh-image{
-        height: 50%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mesh-img{
-        width: 50%;
-    }
-
-    .mesh-title{
-        font-family: 'Bebas Neue', cursive;
-        color: rgb(163, 163, 163);
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .mesh-buy{
-        display: flex;
-        flex-direction: row;
-        width: 70%;
-        justify-content: space-evenly;   
-    }
-
-    .mesh-cost{
-        font-family: 'Bebas Neue', cursive;
-        color: rgb(163, 163, 163);
-        font-size: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .mesh-button{
-        width: 100px;
-        height: 40px;
-        border-radius: 4px;
-        background-color: rgb(70, 184, 172);
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-    }
-
-    .footer{
-        width: 100%;
-        background-color: rgb(70, 184, 172);
-        display: flex;
-        justify-content: center;
-        padding: 30 0 40 0;
-    }
-
-    .footer-content{
-        width: 1400px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .column{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .column-title{
-        font-family: 'Bebas Neue', cursive;
-        color: white;
-        font-size: 25px;
-    }
-
-    .column-text{
+    .about__info__desc{
         font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
-        color: rgb(236, 236, 236);
-        margin-top: 1px;
+        margin-top: 10px;
+    }
+
+    .about__info__second__title{
+        margin-top: 20px;
     }
 
     }
 
-        @media only screen and (min-width: 1000px) and (max-width: 1399px) {
-        
-            .header{
-                width: 100%;
-                height: 70px;
-                background: rgb(255, 255, 255);
-                display: flex;
-                justify-content: center;
-            }
-            
-            .header-content{
-                width:  1000px;
-                height: 100%;
-                display: flex;
-                justify-content: space-between;    
-            }
-            
-            .logo{
-                font-family: 'Lobster', cursive;
-                font-size: 40px;
-                color: rgb(76, 207, 193);
-                display: flex;
-                align-items: center;
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                user-select: none;    
-                padding-left: 30px;
-            }
-            
-            .search{
-                display: flex;
-                align-items: center;
-            }
-            
-            .search-input{
-                width: 500px;
-                height: 40px;
-                text-decoration: none;
-                border: 2px solid rgb(225, 225, 225);
-                color: rgb(71, 71, 71);
-                padding: 9 14 9 9;
-                font-size: 14px;
-                border-radius: 15px;             
-            }
-            
-            .search-input:active, :hover, :focus {
-                outline: 0;
-                outline-offset: 0;
-            }
-            
-            .search-button{
-                margin-left: -27px;
-                color: rgb(202, 202, 202);
-            }
-            
-            .balance{
-                height: 100%;
-                display: flex;
-                align-items: center;
-                padding: 0 30 0 0;
-            }
-            
-            .basket{
-                font-size: 35px;
-                color: rgb(76, 207, 193);
-                padding: 0 10 5 25;
-            }
-            
-            .money{
-                font-size: 23px;
-                color: rgb(172, 172, 172);
-                font-family: 'Bebas Neue', cursive;
-            }
-            
-            .nav-bar{
-                width: 100%;
-                height: auto;
-                background-color: rgb(76, 207, 193);
-                display: flex;
-                justify-content: center;
-                -moz-user-select: none;
-                -khtml-user-select: none;
-                user-select: none;    
-            }
-            
-            .bar-content{
-                width:  1000px;
-                display: flex;
-            }
-            
-            .nav-slot{
-                padding: 5 10 5 10;
-                border-left: 2px solid white;
-                font-family: 'Bebas Neue', cursive;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 21px;
-            }
-            
-            .nav1{
-                border: none;
-                display:flex;
-                flex-grow: 1;
-            }
-            
-            .nav2{
-                flex-grow: 1;
-            }
-            
-            .nav3{
-                flex-grow:1.4;
-            }
-            
-            .nav4{
-                flex-grow: 1.3;
-            }
-            
-            .nav5{
-                flex-grow: 1.6;
-            }
-            
-            .nav6{
-                flex-grow: 1.5;
-            }
-            
-            .nav7{
-                flex-grow: 1.2;
-            }
-            
-            .nav8{
-                flex-grow: 1.3;
-            }
-            
-            .nav9{
-                flex-grow: 1.2;
-            }
-            
-            .nav10{
-                flex-grow: 1.6;
-            }
-            
-            .first-block{
-                width: 100%;
-                height: 500px;
-                background-color: rgb(70, 184, 172);
-                display: flex;
-                justify-content: center;
-            }
-            
-            .first-block-content{
-                width:   1000px;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-            }
-            
-            .shirt-div{
-                width: 350px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .shirt{
-                width: 300px;
-            }
-            
-            .shirt-content{
-                width: 700px;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;       
-            }
-            
-            .shirt-title{
-                text-align: left;
-                font-size: 60px;
-                color: white;
-                font-family: 'Bebas Neue', cursive;
-                line-height: 0.7;
-            }
-            
-            .shirt-desc{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 23px;
-                color: white;
-                text-align: left;
-            }
-            
-            .shirt-button{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 30px;
-                color: white;
-                font-family: 'Bebas Neue', cursive;
-                border: 4px solid white;
-                border-radius: 10px;
-                width: 150px;
-                height: 50px;
-            }
-            
-            .balls{
-                display: flex;
-            }
-            
-            .circle{
-                width: 15px;
-                height: 15px;
-                background-color: white;
-                border-radius: 10000000000000000px;
-                margin: 0 10 0 10;
-            }
-            
-            .products{
-                width: 100%;
-                height: 150px;
-                display: flex;
-                justify-content: center;
-                -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-            }
-            
-            .products-content{
-                width:   1000px;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .product-arrow{
-                width: 50px;
-                height: 100%;
-                font-size: 50px;
-                color: rgb(230, 230, 230);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .product{
-                width: 300px;
-                height: 100%;
-                
-                display: flex;
-            }
-            
-            .pf{
-                border: none;
-            }
-            
-            .product-img{
-                width: 55%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .product-info{
-                width: 45%;
-                height: 100%;
-            }
-            
-            .product-image{
-                width: 150px;
-            }
-            
-            .product-info{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-evenly;
-            }
-            
-            .product-title{
-                font-family: 'Bebas Neue', cursive;
-                color: rgb(163, 163, 163);
-                font-size: 25px;
-            }
-            
-            .product-button{
-                width: 70px;
-                height: 35px;
-                background-color: rgb(70, 184, 172);
-                border-radius: 15px;
-                display: flex;
-                color: white;
-                font-family: 'Bebas Neue', cursive;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-            }
-            
-            .featured-products{
-                width: 100%;
-                height: 50px;
-                display: flex;
-                background-color: rgb(70, 184, 172);
-                justify-content: center;
-            }
-            
-            .featured-products-content{
-                width:   1000px;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                padding-left: 20px;
-            }
-            
-            .featured-products-title{
-                font-size: 30px;
-                color: white;
-                font-family: 'Bebas Neue', cursive;
-            }
-            
-            .mesh{
-                width: 100%;
-                display: flex;
-                justify-content: center;  
-            }
-            
-            .mesh-content{
-                width: 1000px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                align-content: space-around;
-                padding-bottom: 50px;
-            }
-            
-            .mesh-block{
-                margin-top: 50px;
-                width: 255px;
-                height: 255px;
-                -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                border-bottom: 8px solid rgb(70, 184, 172);
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-            
-            .mesh-image{
-                height: 50%;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .mesh-img{
-                width: 50%;
-            }
-            
-            .mesh-title{
-                font-family: 'Bebas Neue', cursive;
-                color: rgb(163, 163, 163);
-                font-size: 25px;
-                text-align: center;
-            }
-            
-            .mesh-buy{
-                display: flex;
-                flex-direction: row;
-                width: 70%;
-                justify-content: space-evenly;   
-            }
-            
-            .mesh-cost{
-                font-family: 'Bebas Neue', cursive;
-                color: rgb(163, 163, 163);
-                font-size: 25px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .mesh-button{
-                width: 90px;
-                height: 35px;
-                border-radius: 15px;
-                background-color: rgb(70, 184, 172);
-                font-family: 'Bebas Neue', cursive;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 20px;
-            }
-            
-            .footer{
-                width: 100%;
-                background-color: rgb(70, 184, 172);
-                display: flex;
-                justify-content: center;
-                padding: 30 0 40 0;
-            }
-            
-            .footer-content{
-                width:  1000px;
-                display: flex;
-                justify-content: space-evenly;
-            }
-            
-            .column{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .column-title{
-                font-family: 'Bebas Neue', cursive;
-                color: white;
-                font-size: 25px;
-            }
-            
-            .column-text{
-                font-size: 14px;
-                font-family: 'Open Sans', sans-serif;
-                color: rgb(236, 236, 236);
-                margin-top: 1px;
-            }
+    @media (max-width: 991px){
+ 
+        .about{
+            padding: 09;
         }
 
-            @media only screen and (min-width:600px) and (max-width: 999px) {
-                
-                .basket , .money , .search , .nav-bar , .product-button , .first-block{
-                    display: none;
-                }           
+        .services__inner , .about__inner{
+            padding: 100 0;
+        }
 
-                .header{
-                    width: 100%;
-                    height: 70px;
-                    background: rgb(255, 255, 255);
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .header-content{
-                    width: 600px;
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-between;    
-                }
-                
-                .logo{
-                    font-family: 'Lobster', cursive;
-                    font-size: 40px;
-                    color: rgb(76, 207, 193);
-                    display: flex;
-                    align-items: center;
-                    -moz-user-select: none;
-                    -khtml-user-select: none;
-                    user-select: none;    
-                    padding-left: 30px;
-                }                
+        /* Header */
+
+        .header{
+            position: fixed;
+            height: auto;
+            padding: 10 0;
+            background-color: rgb(255, 255, 255)
+        }
+
+        .header__inner{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Burger + Nav */
+
+        .nav{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            width: 50%;
+            height: calc(100vh - 69px);
+            text-align: center;
+            background-color: rgb(255, 255, 255);          
+            display: none;
+        }
+
+        .nav__element{
+            height: 16.66666%;
+            width: 100%;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(149, 149, 149);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .nav-show{
+            display: flex;
+        }
+
+        .burger{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40px;
+            height: 30px;
+            padding: 0;
+        }
+
+        .burger__item{
+            width: 40px;
+            display: block;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+            font-size: 0;
+            color: transparent;
+            position: relative;
+        }
+    
+        /* Intro */
+
+        .intro{
+            height: auto;
+        }
+
+        .cup{
+            display: none;
+        }
+
+        .intro__title{
+            margin: 100 0;
+            font-size: 40px;
+        }
+
+        .intro__title__p{
+            font-size: 40px;
+        }
+
+        .text--blue{
+            font-size: 40px;
+        }
+
+        /* About */
+
+        .about{
+            padding: 0;
+        }
+
+        .about__inner{
+            padding: 60 0;
+        }
+
+        .about__content{
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about__images{
+            width: 600px;
+        }
+        
+        .about__img{
+            left: 0;
+            transform: none;
+        }
+
+        .about__info{
+            width: 600px;
+            margin:0;
+            padding: 30 10;
+        }
+        
+        .about__info__title{
+            font-size: 25px;            
+        }
+
+        .about__info__desc{
+            font-size: 18px;
+        }
+
+        /* Works */
+        
+        .works .container{
+            padding: 0;
+        }
+
+        .works__inner{
+            padding: 70 0 0 0;
+        }        
+
+        .work__item{
+            width:50%;
+            height: calc(100vw / 2);
+            margin:0;
+        }
+
+        .work__img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .work__items{
+            margin-top: 70px;
+        }
+
+        /* Sevices */
+
+        .services .container{
+            padding: 0;
+        }
+
+        .services__inner{
+            padding: 70 0;
+        }
+
+        .services__content{
+            width: 767px;
+            max-width: 100%;
+            margin: 50 auto;
+        }
+
+        .brick-type-big{
+            width: 60%;
+        }
+
+        .brick-type-small{
+            width: 40%;
+        }
+
+        .services__brick{
+            margin: 0;
+        }
+
+        .service__img{
+            width: 100%;
+            height: 273px;
+            left: 0;
+            transform: none;
+        }
+
+        .brick-hover{
+            opacity: 1;
+            padding: 30;
+            text-align: center;
+        }
+
+        .brick__hover__more{
+            display: flex;
+            width: auto;
+            height: auto;
+            justify-content: center;
+        }
+
+        .brick-click{
+            padding: 30;
+        }
+
+        .brick-click .brick__hover__title{
+            display: none;
+        }
+
+        .color--black{
+            font-size: 15px;
+            line-height: 1.3;
+        }
+
+        .brick-type-small .brick-click{
+            padding: 30px;
+        }
+
+        /* Team */
+
+        .team .container{
+            padding: 0;
+        }
+
+        .team__item{
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Reviews */
+
+        .reviews__content{
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        .reviews__images{
+            margin-bottom: 30px;
+        }
+
+        .reviews__info{
+            margin: 0;
+            max-width: 100%;
+        }
+
+        /* Comp */
+
+        .comp__item{
+            padding: 55;
+        }
+
+        /* Adress */
+
+        .adress{
+            padding: 0;
+        }
+
+        .adress__inner{
+            padding: 50 30;
+            flex-direction: column;
+        }
+
+        .adress__forms{
+            width: 100%;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+
+        .adress__form{
+            height: 15%;
+            font-size: 17px;
+        }
+
+        .send{
+            width: 60%;
+            height: 70px;
+            align-self: center;
+            font-size: 26px;
+        }
+
+        .adress__info{
+            width: 100%;
+            margin: 0;
+            font-size: 17px;
+            height: auto;
+        }
+
+        .adress__text{            
+            padding: 20px;
+        }
+
+        .adress__item{
+            padding: 10px;
+            font-size: 17px;
+        }
+
+    }
+
+    @media (max-width: 767px){
+        
+        /* Header */
+
+        .header__logo{
+            font-size: 13px;
+            padding: 4 5;
+            border: 3px solid black;
+        }
+
+        .container{
+            padding: 0 8;
+        }
+
+        .header__logo__O{
+            font-size: 14px;
+        }
+
+        .burger{
+            width: 30px;
+            height: 20px;
+        }
+
+        .burger__item{
+            width: 30px;
+        }
+
+        .nav{
+            height: calc(100vh - 52px);
+            width: 50%;
+        }
+
+        .about__title, .works__title, .services__title, .team__title, .reviews__title {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+
+        .about__subtitle, .works__subtitle, .works__subtitle, .team__subtitle, .reviews__subtitle {
+            font-family: 'Merriweather', serif;
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Intro */
+
+        .intro__inner{
+            padding: 50 0;
+        }
+
+
+        .intro__title , .intro__title__p , .text--blue{
+            font-size: 34px;
+        }
+
+        .intro__title{
+            margin: 0 0 50 0;
+        }
+
+        .text--blue{
+            padding: 5;
+        }
+
+        .intro__button{
+            width: 190px;
+            height: 50px;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* About */
+
+        .about__info{
+            max-width: 100%;
+        }
+
+        .about .container{
+            padding: 0;
+        }
+
+        .about__images{
+            width: 100%;
+            box-shadow: none;
+        }
+
+        .about__img{
+            left: 30%;
+            transform: translateX(-30%);
+        }
+
+        .about__info{
+            padding: 40 30 0 30;
+        }
+
+        .about__info__title{
+            font-size: 20px;
+        }
+
+        .about__info__desc{
+            font-size: 15px;
+            line-height: 1.4;
+        }
+
+        /* Services */
+
+        .services__content{
+            flex-direction: column;
+            align-items: center;
+            margin: 70 0 0 0;
+        }
+
+        .services__inner{
+            padding: 70 0 0 0;
+            height: auto;
+        }
+
+        .services__brick{
+            width: 100%;
+            max-height: 250px;
+        }
+
+        .brick-hover .brick__hover__desc{
+            display: none;
+        }
+
+        .brick-hover{
+            padding: 30 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .brick__hover__title{
+            margin: 0 0 30 0;
+        }
+
+        .brick__hover__more{
+            height: auto;
+        }
+
+        .arrow-left{
+            height: 24px;
+        }
+
+        .brick-click{
+            padding: 18px;
+            font-size: 14px;
+        }
+
+        .brick-type-small .brick-click{
+            padding: 18px;
+        }
+
+        .color--black{
+            font-size: 17px;
+        }
+
+        .service__img{
+            width: 100%;
+            height: auto;
+        }
+
+        /* Team */
+        .team__items{
+            padding: 0;            
+        }
+
+        .team__item{
+            width: 50%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .team__img{
+            width: 100%;
+            height: auto;
+        }
+
+        .team__item__content__wrapper{
+            display: flex;
+            align-items: flex-end;
+            padding: 0;
+        }
+
+        .team__item__content{
+            padding: 20px;
+            transform: translateY(350px);
+            height: auto;
+        }
+
+        .team__item__h{
+            font-size: 18px;
+            margin-bottom: 10px;
+            box-shadow: none;
+        }
+
+        .team__desc{
+            font-size: 14px;
+        }
+
+        .social__icon{
+            width: 35px;
+            height: 35px;
+            border: 2px solid black;
+            border-radius: 9999px;
+            padding: 5px;
+        }
+
+
+        /* Reviews */
+        
+        .reviews{
+            padding: 30 0;
+        }
+
+        .reviews__info{
+            height: auto;
+            padding: 20px;
+            display: block;
+        }
+
+        .review__desc{
+            font-size: 14;
+        }
+
+        .team__item__h{
+            margin-bottom: 20px;
+        }
+
+        .reviews__star{
+            margin-top: 20px;
+        }
+
+        .reviews__images{
+            box-shadow: none;
+        }
+
+        /* Comp */
+
+        .comp .container{
+            padding: 0;
+        }
+
+        .comp{
+            padding: 10 0;
+        }
+
+        .comp__item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15 0;
+        }
+
+        .comp__img{
+            width: 56px;
+        }
+
+        /* Adress */
+
+        .adress .container{
+            padding: 0;
+        }
+
+        .adress{
+            padding: 0;
+            background-image: none;
+        }
+
+        .adress__inner{
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .adress__forms{
+            width: 100%;
+            height: 400px;
+            margin-bottom: 0px;
+            border-bottom: 3px solid black;
+        }
+
+        .adress__form{
+            height: 15%;
+            font-size: 17px;
+        }
+
+        .send{
+            max-width: 80%;
+            width: 300px;
+            height: 60px;
+            align-self: center;
+            font-size: 20px;
+        }
+
+        .adress__info{
+            width: 100%;
+            margin: 0;
+            font-size: 17px;
+            height: auto;
+        }
+
+        .adress__text{            
+            padding: 20px;
+        }
+
+        .adress__item{
+            padding: 10px;
+            font-size: 17px;
+        }
                
-                .balance{
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    padding: 0 30 0 0;
-                }
 
-                .search-button-mobile{
-                    color: rgb(202, 202, 202);
-                    display: flex;
-                    align-self: center;
-                    font-size: 23px;
-                }
-                
-                .burger{
-                    display: flex;
-                    flex-direction: column;
-                    height: 29px;
-                    width: 29px;
-                    justify-content: space-between;
-                    margin-left: 20px;
-                }
+    }
 
-                .burg{
-                    width: 100%;
-                    height: 30%;
-                    border-radius: 10px;
-                    background-color: rgb(70, 184, 172);
-                }                
+    @media (max-width: 421px){
 
-                .first-block-mobile{
-                    width: 100%;
-                    height: 500px;
-                    background-color: rgb(70, 184, 172);
-                    display: flex;
-                    justify-content: center;
-                }
-                
-                .first-block-content{
-                    width:  600px;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: space-evenly;
-                }
-                
-                .first-shirt{
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .sh{
-                    width: 50%;
-                    display: flex;
-                    justify-content: center;
-                }
+        .about__title, .works__title, .services__title, .team__title, .reviews__title {
+            font-size: 21px;
+        }
 
-                .shirt{
-                    width: 70%;
-                }
-                
-                .second-shirt{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap; 
-                }
-                
-                .shirt-title{
-                    text-align: center;
-                    text-align: left;
-                    font-size: 50px;
-                    color: white;
-                    font-family: 'Bebas Neue', cursive;
-                }
-                
-                .shirt-desc{
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 21px;
-                    color: white;
-                    text-align: left;
-                    width: 55%;
-                }
-                
-                .shirt-button{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 25px;
-                    margin: 0 20 20 0;
-                    color: white;
-                    font-family: 'Bebas Neue', cursive;
-                    border: 4px solid white;
-                    border-radius: 10px;
-                    width: 130px;
-                    height: 40px;
-                }
-                
-                .third-shirt{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
+        .about__subtitle, .works__subtitle, .works__subtitle, .team__subtitle, .reviews__subtitle {
+            font-size: 11px;
+        }
 
-                .balls{
-                    display: flex;
-                }
-                
-                .circle{
-                    width: 15px;
-                    height: 15px;
-                    background-color: white;
-                    border-radius:6000000000000000px;
-                    margin: 0 10 0 10;
-                }
-                
-                .products{
-                    width: 100%;
-                    height: 150px;
-                    display: flex;
-                    justify-content: center;
-                    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                }
-                
-                .products-content{
-                    width:  600px;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .product-arrow{
-                    width: 50px;
-                    height: 100%;
-                    font-size: 50px;
-                    color: rgb(230, 230, 230);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .product{
-                    width: 150px;
-                    height: 100%;
-                    
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .pf{
-                    border: none;
-                }
-                
-                .product-img{
-                    width: 90%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .product-info{
-                    width: 100%;
-                }
-                
-                .product-image{
-                    width: 100%;
-                }
-                
-                .product-info{
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: space-evenly;
-                }
-                
-                .product-title{
-                    font-family: 'Bebas Neue', cursive;
-                    color: rgb(163, 163, 163);
-                    font-size: 20px;
-                }
-                                
-                .featured-products{
-                    width: 100%;
-                    height: 50px;
-                    display: flex;
-                    background-color: rgb(70, 184, 172);
-                    justify-content: center;
-                }
-                
-                .featured-products-content{
-                    width:  600px;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    padding-left: 20px;
-                }
-                
-                .featured-products-title{
-                    font-size: 30px;
-                    color: white;
-                    font-family: 'Bebas Neue', cursive;
-                }
-                
-                .mesh{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;  
-                }
-                
-                .mesh-content{
-                    width:600px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-evenly;
-                    align-content: space-around;
-                    padding-bottom: 50px;
-                }
-                
-                .mesh-block{
-                    margin-top: 30px;
-                    width: 220px;
-                    height: 220px;
-                    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                    border-bottom: 8px solid rgb(70, 184, 172);
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
-                
-                .mesh-image{
-                    height: 50%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .mesh-img{
-                    width: 50%;
-                }
-                
-                .mesh-title{
-                    font-family: 'Bebas Neue', cursive;
-                    color: rgb(163, 163, 163);
-                    font-size: 25px;
-                    text-align: center;
-                }
-                
-                .mesh-buy{
-                    display: flex;
-                    flex-direction: row;
-                    width: 70%;
-                    justify-content: space-evenly;   
-                }
-                
-                .mesh-cost{
-                    font-family: 'Bebas Neue', cursive;
-                    color: rgb(163, 163, 163);
-                    font-size: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .mesh-button{
-                    width: 80px;
-                    height: 30px;
-                    border-radius: 12px;
-                    background-color: rgb(70, 184, 172);
-                    font-family: 'Bebas Neue', cursive;
-                    color: white;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 20px;
-                }
-                
-                .footer{
-                    width: 100%;
-                    background-color: rgb(70, 184, 172);
-                    display: flex;
-                    justify-content: center;
-                    padding: 20 0 10 0;
-                }
-                
-                .footer-content{
-                    width: 600px;
-                    display: flex;
-                    justify-content: space-evenly;
-                }
-                
-                .column{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                
-                .column-title{
-                    font-family: 'Bebas Neue', cursive;
-                    color: white;
-                    font-size: 20px;
-                }
-                
-                .column-text{
-                    font-size: 12px;
-                    font-family: 'Open Sans', sans-serif;
-                    color: rgb(236, 236, 236);
-                }
+        /* Nav */
+        
+        .nav{
+            width: 100%;
+        }
+
+        /* .nav__element{
+            height: 20px;
+            width: 100%;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(149, 149, 149);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        /* Intro */
+
+        .intro__title , .intro__title__p , .text--blue{
+            font-size: 25px;
+        }
+
+        .text--blue{
+            padding: 3px;
+        }
+
+        .intro__button{
+            width: 150px;
+            height: 40px;
+            padding: 0;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        /* About */
+
+        .about__inner{
+            padding: 30 0;
+        }
+
+        .about__info{
+            padding: 20px;
+        }
+
+        .about__info__title{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .about__info__desc{
+            font-size: 14px;
+        }
+
+        .about__content{
+            margin-top: 30px;
+        }
+
+        .about__images{
+            height: 300px;
+        }
+
+
+        /* Works */
+
+        .works__inner{
+            padding: 30 0 0 0;
+        }
+
+        .work__items{
+            margin-top: 30px;
+        }
+
+            /* Team */
+    
+            .team__inner{
+                padding: 30 0 0 0;
             }
 
-                @media only screen and (min-width:420px) and (max-width: 599px) {
-                        
-                    .basket , .money , .search , .nav-bar , .product-button , .first-block ,  .product-arrow{
-                        display: none;
-                    }
-                
-                    .header{
-                        width: 100%;
-                        height: 50px;
-                        background: rgb(255, 255, 255);
-                        display: flex;
-                        justify-content: center;
-                    }
-                    
-                    .header-content{
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: space-between;    
-                    }
-                    
-                    .logo{
-                        font-family: 'Lobster', cursive;
-                        font-size: 30px;
-                        color: rgb(76, 207, 193);
-                        display: flex;
-                        align-items: center;
-                        -moz-user-select: none;
-                        -khtml-user-select: none;
-                        user-select: none;    
-                        padding-left: 15px;
-                    }                
-                
-                    .balance{
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        padding: 0 15 0 0;
-                    }
-                
-                    .search-button-mobile{
-                        color: rgb(202, 202, 202);
-                        display: flex;
-                        align-self: center;
-                        font-size: 23px;
-                    }
-                    
-                    .burger{
-                        display: flex;
-                        flex-direction: column;
-                        height: 25px;
-                        width: 25px;
-                        justify-content: space-between;
-                        margin-left: 20px;
-                    }
-                
-                    .burg{
-                        width: 100%;
-                        height: 23%;
-                        border-radius: 10px;
-                        background-color: rgb(70, 184, 172);
-                    }                
-                
-                    .first-block-mobile{
-                        width: 100%;
-                        height: auto;
-                        background-color: rgb(70, 184, 172);
-                        display: flex;
-                        justify-content: center;
-                    }
-                    
-                    .first-block-content{
-                        width:  95%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: space-evenly;
-                    }
-                    
-                    .first-shirt{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: nowrap;
-                    }
-                    
-                    .sh{
-                        width: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .shirt{
-                        width: 60%;
-                    }
+            .team__items{
+                margin-top: 30px;
+            }
 
-                    .second-shirt{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        flex-wrap: wrap;    
-                    }
-                    
-                    .shirt-title{
-                        padding-top: 10px;
-                        text-align: left;
-                        font-size: 26px;
-                        color: white;
-                        font-family: 'Bebas Neue', cursive;
-                    }
-                    
-                    .shirt-desc{
-                        font-family: 'Open Sans', sans-serif;
-                        font-size: 15px;
-                        color: white;
-                        text-align: left;
-                        width: 55%;
-                    }
-                    
-                    .shirt-button{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 18px;
-                        margin: 0 20 20 0;
-                        color: white;
-                        font-family: 'Bebas Neue', cursive;
-                        border: 2px solid white;
-                        border-radius: 5px;
-                        width: 90px;
-                        height: 25px;
-                        margin-top: 30px;
-                    }
-                    
-                    .shirt-img{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;                        
-                    }
+            .team__item{
+                width: 50%;
+                padding: 0;
+                margin: 0;
+            }
+    
+            .team__img{
+                width: 100%;
+                height: auto;
+            }
+    
+            .team__item__content__wrapper{
+                display: flex;
+                align-items: flex-end;
+                padding: 0;
+            }
+    
+            .team__item__content{
+                padding: 15 17 10 17;
+                transform: translateY(350px);
+                height: 100%;
+            }
+    
+            .team__item__h{
+                font-size: 15px;
+                margin-bottom: 5px;
+                box-shadow: none;
+            }
+    
+            .team__desc{
+                font-size: 12px;
+                margin-bottom: 10px;
+                line-height: 1.3;
+            }
+    
+            .social__icon{
+                width: 28px;
+                height: 28px;
+                border: 2px solid black;
+                border-radius: 9999px;
+                padding: 4px;
+            }
+    
+        /* Services */
 
-                    .third-shirt{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                    }
-                
-                    .balls{
-                        display: flex;
-                    }
-                    
-                    .circle{
-                        width: 10px;
-                        height: 10px;
-                        background-color: white;
-                        border-radius:6000000000000000px;
-                        margin: 0 6 0 6;
-                    }
-                    
-                    .products{
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        justify-content: center;
-                        -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                        -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                    }
-                    
-                    .products-content{
-                        width:  100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .product{
-                        width: 130px;
-                        height: 100%;                        
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .pf{
-                        border: none;
-                    }
-                    
-                    .product-img{
-                        width: 75%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .product-info{
-                        width: 100%;
-                    }
-                    
-                    .product-image{
-                        width: 100%;
-                    }
-                    
-                    .product-info{
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: space-evenly;
-                    }
-                    
-                    .product-title{
-                        font-family: 'Bebas Neue', cursive;
-                        color: rgb(163, 163, 163);
-                        font-size: 15px;
-                    }
-                                    
-                    .featured-products{
-                        width: 100%;
-                        height: 50px;
-                        display: flex;
-                        background-color: rgb(70, 184, 172);
-                        justify-content: center;
-                    }
-                    
-                    .featured-products-content{
-                        width:  100%;
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        padding-left: 20px;
-                    }
-                    
-                    .featured-products-title{
-                        font-size: 30px;
-                        color: white;
-                        font-family: 'Bebas Neue', cursive;
-                    }
-                    
-                    .mesh{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;  
-                    }
-                    
-                    .mesh-content{
-                        width: 100%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        align-content: space-around;
-                        padding-bottom: 30px;
-                    }
-                    
-                    .mesh-block{
-                        margin: 30 8 0 8;
-                        width: 184px;
-                        height: 184px;
-                        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                        border-bottom: 8px solid rgb(70, 184, 172);
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        align-items: center;
-                    }
-                    
-                    .mesh-image{
-                        height: 50%;
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .mesh-img{
-                        width: 40%;
-                        padding: 5 0 0 0;
-                    }
-                    
-                    .mesh-title{
-                        font-family: 'Bebas Neue', cursive;
-                        color: rgb(163, 163, 163);
-                        font-size: 25px;
-                        text-align: center;
-                    }
-                    
-                    .mesh-buy{
-                        display: flex;
-                        flex-direction: row;
-                        width: 70%;
-                        justify-content: space-evenly;   
-                    }
-                    
-                    .mesh-cost{
-                        font-family: 'Bebas Neue', cursive;
-                        color: rgb(163, 163, 163);
-                        font-size: 20px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .mesh-button{
-                        width: 80px;
-                        height: 30px;
-                        border-radius: 12px;
-                        background-color: rgb(70, 184, 172);
-                        font-family: 'Bebas Neue', cursive;
-                        color: white;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 20px;
-                    }
-                    
-                    .footer{
-                        width: 100%;
-                        background-color: rgb(70, 184, 172);
-                        display: flex;
-                        justify-content: center;
-                        padding: 20 0 10 0;
-                    }
-                    
-                    .footer-content{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;
-                    }
-                    
-                    .column{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                    }
-                    
-                    .column-title{
-                        font-family: 'Bebas Neue', cursive;
-                        color: white;
-                        font-size: 20px;
-                    }
-                    
-                    .column-text{
-                        font-size: 12px;
-                        font-family: 'Open Sans', sans-serif;
-                        color: rgb(236, 236, 236);
-                    }
-                }
+        .brick__hover__desc{
+            font-size: 13px;
+        }
+        
+        .brick-click{
+            padding: 15px;
+        }
 
-                @media only screen and (min-width:0px) and (max-width:419px) {
-                    
-                    .basket , .p3 , .mesh-button , .money , .search , .nav-bar , .product-button , .first-block ,  .product-arrow{
-                        display: none;
-                    }
+        .brick-type-small .brick-click{
+            padding: 15px;
+        }
 
-                    .products-content .slick-arrow{
-                        font-size: 0;
-                        width: 50px;
-                        height: 23px;
-                        border: none;
-                    }
+        /* Reviews */
 
-                    .shirt-div{
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                
-                    .header{
-                        width: 100%;
-                        height: 50px;
-                        background: rgb(255, 255, 255);
-                        display: flex;
-                        justify-content: center;
-                    }
-                    
-                    .header-content{
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        justify-content: space-between;    
-                    }
-                    
-                    .logo{
-                        font-family: 'Lobster', cursive;
-                        font-size: 28px;
-                        color: rgb(76, 207, 193);
-                        display: flex;
-                        align-items: center;
-                        -moz-user-select: none;
-                        -khtml-user-select: none;
-                        user-select: none;    
-                        padding-left: 15px;
-                    }                
-                
-                    .balance{
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        padding: 0 15 0 0;
-                    }
-                
-                    .search-button-mobile{
-                        color: rgb(202, 202, 202);
-                        display: flex;
-                        align-self: center;
-                        font-size: 23px;
-                    }
-                    
-                    .burger{
-                        display: flex;
-                        flex-direction: column;
-                        height: 25px;
-                        width: 25px;
-                        justify-content: space-between;
-                        margin-left: 20px;
-                    }
-                
-                    .burg{
-                        width: 100%;
-                        height: 23%;
-                        border-radius: 10px;
-                        background-color: rgb(70, 184, 172);
-                    }                
-                
-                    .first-block-mobile{
-                        width: 100%;
-                        height: auto;
-                        background-color: rgb(70, 184, 172);
-                        display: flex;
-                        justify-content: center;
-                    }
+        .reviews{
+            padding: 30 0 0 0;
+        }
 
-                    .first-block-content{
-                        width: 100%;
-                    }
-                                        
-                    .first-shirt{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: nowrap;
-                    }  
-            
-                    .second-shirt{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;  
-                        flex-wrap: wrap;
-                        height: auto;
-                    }
+        .reviews .container{
+            padding: 0;
+        }
 
-                    .shirt-img{
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;                     
-                    }
+        .reviews__content{
+            margin-top: 30px;
+        }
 
-                    .shirt-title{
-                        width: 95%;
-                        margin: 10px 0px 10px;
-                        text-align: left;
-                        font-size: 35px;
-                        color: white;
-                        font-family: 'Bebas Neue', cursive;
-                        text-align: center;
-                    }
+        .reviews__images{
+            max-width: 100%;
+        }
 
-                    .sh{
-                        width: 70%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .shirt{
-                        width: 60%;
-                    }
-                    
-                    .shirt-desc{
-                        padding: 10 0 10 0;
-                        font-family: 'Open Sans', sans-serif;
-                        font-size: 18px;
-                        color: white;
-                        text-align: left;
-                        width: 80%;
-                        text-align: center;
-                    }
-                    
-                    .shirt-button{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 22px;
-                        color: white;
-                        font-family: 'Bebas Neue', cursive;
-                        border: 2px solid white;
-                        border-radius: 5px;
-                        width: 120px;
-                        height: 40px;
-                    }
-                    
-                    .third-shirt{
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;                        
-                        justify-content: space-evenly;
-                        align-items: center;
-                        padding: 25 0 25 0;
-                    }
-                
-                    .balls{
-                        display: flex;
-                        margin-bottom: 35px;
-                    }
-                    
-                    .circle{
-                        width: 13px;
-                        height: 13px;
-                        background-color: white;
-                        border-radius:6000000000000000px;
-                        margin: 0 9 0 9;
-                    }
-                    
-                    .products{
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        justify-content: center;
-                        -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                        -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);
-                        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.26);                        
-                        overflow: hidden;
-                        min-width: 0;
-                    }
-
-                    .products-content{
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        min-width: 0;
-                    }
-                    
-                    .product{
-                        width: 49%;                        
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        min-width: 0;
-                    }
-                    
-                    .pf{
-                        border: none;
-                    }
-                    
-                    .product-img{
-                        width: 90%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .product-info{
-                        width: 100%;
-                    }
-                    
-                    .product-image{
-                        width: 100%;
-                    }
-                    
-                    .product-info{
-                        display: flex;
-                        align-items: flex-start;
-                        justify-content: space-evenly;
-                    }
-                    
-                    .product-title{
-                        font-family: 'Bebas Neue', cursive;
-                        color: rgb(163, 163, 163);
-                        font-size: 13px;
-                        text-align: center;
-                    }
-                    
-                    .p3{
-                        display: none;
-                    }
-
-                    .featured-products{
-                        width: 100%;
-                        height: 30px;
-                        display: flex;
-                        background-color: rgb(70, 184, 172);
-                        justify-content: center;
-                    }
-                    
-                    .featured-products-content{
-                        width:  100%;
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        padding-left: 20px;
-                    }
-                    
-                    .featured-products-title{
-                        font-size: 20px;
-                        color: white;
-                        font-family: 'Bebas Neue', cursive;
-                    }
-                    
-                    .mesh{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;  
-                    }
-                    
-                    .mesh-content{
-                        width: 100%;
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        align-content: space-around;
-                        padding-bottom: 30px;
-                    }
-                    
-                    .mesh-block{
-                        margin: 30 4 0 4;
-                        width: 45%;
-                        height: 120px;
-                        -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                        -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.3);
-                        border-bottom: 8px solid rgb(70, 184, 172);
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        align-items: center;
-                    }
-                    
-                    .mesh-image{
-                        height: 50%;
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 5 0 0 0;
-                    }
-                    
-                    .mesh-img{
-                        width: 40%;
-                    }
-                    
-                    .mesh-title{
-                        font-family: 'Bebas Neue', cursive;
-                        color: rgb(163, 163, 163);
-                        font-size: 16px;
-                        text-align: center;
-                    }
-                    
-                    .mesh-buy{
-                        display: flex;
-                        flex-direction: row;
-                        width: 70%;
-                        justify-content: space-evenly;   
-                    }
-                    
-                    .mesh-cost{
-                        font-family: 'Bebas Neue', cursive;
-                        color: rgb(163, 163, 163);
-                        font-size: 18px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .footer{
-                        width: 100%;
-                        background-color: rgb(70, 184, 172);
-                        display: flex;
-                        justify-content: center;
-                        padding: 20 0 10 0;
-                    }
-                    
-                    .footer-content{
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-evenly;
-                        flex-wrap: wrap;
-                    }
-                    
-                    .column{
-                        display: flex;
-                        flex-direction: column;
-                        align-items:center;
-                        justify-content: center;
-                        width: 43%;
-                        padding: 0 10 0 10;
-                        margin-bottom: 20px;
-                    }
-                    
-                    .column-title{
-                        font-family: 'Bebas Neue', cursive;
-                        color: white;
-                        font-size: 20px;
-                        display: flex;
-                        justify-content: center;
-                    }
-                    
-                    .column-text{
-                        font-size: 14px;
-                        font-family: 'Open Sans', sans-serif;
-                        color: rgb(236, 236, 236);
-
-                    }
-                }
+    }
